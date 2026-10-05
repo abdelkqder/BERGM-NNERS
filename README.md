@@ -18,7 +18,7 @@ Install [Python 3.13](https://www.python.org/downloads/) with pip. Git is option
 With Git, clone into any folder you choose:
 
 ```text
-git clone https://github.com/abdelkqder/The-Living-Map-TSYP14.git
+git clone https://github.com/abdelkqder/BERGM-NNERS.git
 cd The-Living-Map-TSYP14
 ```
 
