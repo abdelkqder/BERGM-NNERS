@@ -1,0 +1,17 @@
+[
+  {
+    "scenario": "normal",
+    "display_driver": "windows",
+    "returned_cleanly": true
+  },
+  {
+    "scenario": "writer-failure",
+    "display_driver": "windows",
+    "returned_cleanly": true
+  },
+  {
+    "scenario": "debris-recovery",
+    "display_driver": "windows",
+    "returned_cleanly": true
+  }
+]

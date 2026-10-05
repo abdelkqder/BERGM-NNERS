@@ -1,0 +1,887 @@
+{
+  "passed": true,
+  "checks": {
+    "age_decay": true,
+    "stale_without_lifecycle_change": true,
+    "executor_refresh": true,
+    "contradiction_by_sensing": true,
+    "chain_formed": true,
+    "retained_while_disconnected": true,
+    "delivered_after_reconnect": true,
+    "source_copy_survives": true,
+    "deep_chain": true,
+    "comparison_six_seeds": true,
+    "comparison_targets_reached": true,
+    "ui_controls": true,
+    "deliberate_failures_stop": true
+  },
+  "observation": {
+    "checks": {
+      "age_decay": true,
+      "stale_without_lifecycle_change": true,
+      "executor_refresh": true,
+      "contradiction_by_sensing": true
+    },
+    "aging": {
+      "before": {
+        "memory_id": 257,
+        "host_beacon_id": 1,
+        "version": 1,
+        "source": "W1",
+        "passage_state": null,
+        "mission_relevance": 0.203,
+        "last_update_ts": 1790000016,
+        "hop_count": 1,
+        "beacon_id": 1,
+        "event_type": "FIRE",
+        "x_local": 2.0,
+        "y_local": -3.0,
+        "severity": 3,
+        "state": "UNVERIFIED",
+        "verified_by": null,
+        "live_confidence_pct": 39,
+        "is_stale": false,
+        "age_s": 345.2,
+        "gps_lat": 36.806473,
+        "gps_lon": 10.1815225,
+        "history": [
+          "tick=243 report #0101 v1 UNVERIFIED (first received, from W1 via beacon #1)"
+        ],
+        "aliases": [],
+        "timestamp": 1790000016,
+        "corroborations": 0,
+        "battery_pct": 96,
+        "initial_confidence": 77,
+        "observed_confidence": 77,
+        "source_node": 65,
+        "received_tick": 243
+      },
+      "aged": {
+        "memory_id": 257,
+        "host_beacon_id": 1,
+        "version": 1,
+        "source": "W1",
+        "passage_state": null,
+        "mission_relevance": 0.026,
+        "last_update_ts": 1790000016,
+        "hop_count": 1,
+        "beacon_id": 1,
+        "event_type": "FIRE",
+        "x_local": 2.0,
+        "y_local": -3.0,
+        "severity": 3,
+        "state": "UNVERIFIED",
+        "verified_by": null,
+        "live_confidence_pct": 5,
+        "is_stale": true,
+        "age_s": 1545.2,
+        "gps_lat": 36.806473,
+        "gps_lon": 10.1815225,
+        "history": [
+          "tick=243 report #0101 v1 UNVERIFIED (first received, from W1 via beacon #1)"
+        ],
+        "aliases": [],
+        "timestamp": 1790000016,
+        "corroborations": 0,
+        "battery_pct": 96,
+        "initial_confidence": 77,
+        "observed_confidence": 77,
+        "source_node": 65,
+        "received_tick": 243
+      },
+      "refreshed": {
+        "memory_id": 257,
+        "host_beacon_id": 1,
+        "version": 2,
+        "source": "E1",
+        "passage_state": null,
+        "mission_relevance": 0.0,
+        "last_update_ts": 1790001582,
+        "hop_count": 1,
+        "beacon_id": 1,
+        "event_type": "FIRE",
+        "x_local": 2.0,
+        "y_local": -3.0,
+        "severity": 3,
+        "state": "CLEARED",
+        "verified_by": "E1",
+        "live_confidence_pct": 91,
+        "is_stale": false,
+        "age_s": 22.0,
+        "gps_lat": 36.806473,
+        "gps_lon": 10.1815225,
+        "history": [
+          "tick=243 report #0101 v1 UNVERIFIED (first received, from W1 via beacon #1)",
+          "tick=15831 report #0101 v2, revision 2 UNVERIFIED->CLEARED by E1"
+        ],
+        "aliases": [],
+        "timestamp": 1790000016,
+        "corroborations": 0,
+        "battery_pct": 100,
+        "initial_confidence": 77,
+        "observed_confidence": 95,
+        "source_node": 128,
+        "received_tick": 15831
+      }
+    },
+    "contradiction": {
+      "record": {
+        "memory_id": 257,
+        "host_beacon_id": 1,
+        "version": 2,
+        "source": "E1",
+        "passage_state": null,
+        "mission_relevance": 0.0,
+        "last_update_ts": 1790000377,
+        "hop_count": 1,
+        "beacon_id": 1,
+        "event_type": "FIRE",
+        "x_local": 2.0,
+        "y_local": -3.0,
+        "severity": 3,
+        "state": "CONTRADICTED",
+        "verified_by": "E1",
+        "live_confidence_pct": 86,
+        "is_stale": false,
+        "age_s": 21.5,
+        "gps_lat": 36.806473,
+        "gps_lon": 10.1815225,
+        "history": [
+          "tick=243 report #0101 v1 UNVERIFIED (first received, from W1 via beacon #1)",
+          "tick=3776 report #0101 v2, revision 2 UNVERIFIED->CONTRADICTED by E1"
+        ],
+        "aliases": [],
+        "timestamp": 1790000016,
+        "corroborations": 0,
+        "battery_pct": 100,
+        "initial_confidence": 77,
+        "observed_confidence": 90,
+        "source_node": 128,
+        "received_tick": 3776
+      },
+      "events": [
+        {
+          "tick": 3612,
+          "kind": "mission_loaded",
+          "mission": "M001",
+          "attempt_id": 2,
+          "targets": 1,
+          "hazards": 0,
+          "waypoints": 2,
+          "why": "FIRE #0101 state=UNVERIFIED conf=39% age=345s"
+        },
+        {
+          "tick": 3628,
+          "kind": "replan",
+          "at": [
+            2,
+            1
+          ],
+          "cause": "unexplored cell turned out to be a wall",
+          "cells": [
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "tick": 3643,
+          "kind": "replan",
+          "at": [
+            3,
+            1
+          ],
+          "cause": "unexplored cell turned out to be a wall",
+          "cells": [
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        {
+          "tick": 3764,
+          "kind": "on_site",
+          "cell": [
+            7,
+            5
+          ]
+        },
+        {
+          "tick": 3772,
+          "kind": "not_found",
+          "target": "FIRE"
+        },
+        {
+          "tick": 3773,
+          "kind": "verified",
+          "target": "FIRE",
+          "result": "CONTRADICTED"
+        },
+        {
+          "tick": 3774,
+          "kind": "memory_write",
+          "memory": "#0101",
+          "type": "FIRE",
+          "state": "CONTRADICTED",
+          "version": 2,
+          "beacon": 1,
+          "new_beacon": false,
+          "why": "FIRE contradicted (executor observation)"
+        },
+        {
+          "tick": 3774,
+          "kind": "returning",
+          "why": "mission complete"
+        },
+        {
+          "tick": 3925,
+          "kind": "home",
+          "state": "AVAILABLE",
+          "battery": 100
+        }
+      ]
+    }
+  },
+  "relay": {
+    "checks": {
+      "chain_formed": true,
+      "retained_while_disconnected": true,
+      "delivered_after_reconnect": true,
+      "source_copy_survives": true
+    },
+    "original_hops": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "outage": {
+      "connected": true,
+      "stored": true,
+      "delivered": false,
+      "buffered": 0
+    },
+    "restored_hops": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "received_frames": [
+      "01 04 21 00 09 03 01 00 01 1c 04 02 00 00 a0 40 00 00 80 3f 80 3b b1 6a 03 5a 64 e9 01 00 01 00 ff 80 3b b1 6a 00 6e"
+    ],
+    "stats": [
+      {
+        "rx": 269,
+        "crc_dropped": 0,
+        "dup_dropped": 0,
+        "ttl_dropped": 0,
+        "forwarded": 60,
+        "originated": 36,
+        "retries": 0,
+        "gave_up": 0,
+        "queue_overflow": 0,
+        "stored_updates": 0,
+        "stale_updates_ignored": 0
+      },
+      {
+        "rx": 212,
+        "crc_dropped": 0,
+        "dup_dropped": 1,
+        "ttl_dropped": 0,
+        "forwarded": 40,
+        "originated": 22,
+        "retries": 0,
+        "gave_up": 0,
+        "queue_overflow": 0,
+        "stored_updates": 0,
+        "stale_updates_ignored": 0
+      },
+      {
+        "rx": 198,
+        "crc_dropped": 0,
+        "dup_dropped": 17,
+        "ttl_dropped": 0,
+        "forwarded": 42,
+        "originated": 36,
+        "retries": 6,
+        "gave_up": 2,
+        "queue_overflow": 0,
+        "stored_updates": 0,
+        "stale_updates_ignored": 0
+      },
+      {
+        "rx": 146,
+        "crc_dropped": 0,
+        "dup_dropped": 20,
+        "ttl_dropped": 0,
+        "forwarded": 17,
+        "originated": 40,
+        "retries": 0,
+        "gave_up": 0,
+        "queue_overflow": 0,
+        "stored_updates": 1,
+        "stale_updates_ignored": 0
+      }
+    ]
+  },
+  "ui": {
+    "driver": "windows",
+    "native": true,
+    "results": [
+      {
+        "scenario": "normal",
+        "passed": true,
+        "controls": [
+          "scenario selection",
+          "advance",
+          "pause",
+          "resume",
+          "reset",
+          "tabs",
+          "details toggle",
+          "record selection",
+          "scroll"
+        ],
+        "captures": [
+          "audit\\phase1\\ui\\normal-mission.png",
+          "audit\\phase1\\ui\\normal-memory.png"
+        ]
+      },
+      {
+        "scenario": "writer-failure",
+        "passed": true,
+        "controls": [
+          "scenario selection",
+          "advance",
+          "pause",
+          "resume",
+          "reset",
+          "tabs",
+          "details toggle",
+          "record selection",
+          "scroll"
+        ],
+        "captures": [
+          "audit\\phase1\\ui\\writer-failure-mission.png",
+          "audit\\phase1\\ui\\writer-failure-memory.png"
+        ]
+      },
+      {
+        "scenario": "debris-recovery",
+        "passed": true,
+        "controls": [
+          "scenario selection",
+          "advance",
+          "pause",
+          "resume",
+          "reset",
+          "tabs",
+          "details toggle",
+          "record selection",
+          "scroll"
+        ],
+        "captures": [
+          "audit\\phase1\\ui\\debris-recovery-mission.png",
+          "audit\\phase1\\ui\\debris-recovery-memory.png"
+        ]
+      }
+    ],
+    "deliberate_failures": [
+      {
+        "case": "early-writer",
+        "correctly_stopped": true,
+        "tick": 6501,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The time limit was reached while the explorer stopped before any findings were saved.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "timeout tick=6501, stage=0",
+        "failed_checks": [
+          "all_milestones",
+          "final_memory_states",
+          "missions_completed_and_home",
+          "writer_end",
+          "ona_path"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-early-writer.png"
+      },
+      {
+        "case": "outside-link",
+        "correctly_stopped": true,
+        "tick": 6501,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The time limit was reached while the outside team has not received all required findings.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "timeout tick=6501, stage=1",
+        "failed_checks": [
+          "all_milestones",
+          "final_memory_states",
+          "missions_completed_and_home",
+          "ona_path"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-outside-link.png"
+      },
+      {
+        "case": "missing-brief",
+        "correctly_stopped": true,
+        "tick": 6501,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The time limit was reached while the response robots have not received their instructions.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "timeout tick=6501, stage=2",
+        "failed_checks": [
+          "all_milestones",
+          "final_memory_states",
+          "missions_completed_and_home",
+          "ona_path"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-missing-brief.png"
+      },
+      {
+        "case": "no-clearer",
+        "correctly_stopped": true,
+        "tick": 6501,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The time limit was reached while the route is blocked and the rubble removal robot is out of service.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "timeout tick=6501, stage=4",
+        "failed_checks": [
+          "all_milestones",
+          "final_memory_states",
+          "missions_completed_and_home",
+          "two_distinct_fire_attempts",
+          "debris_executor_used",
+          "clearance_received"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-no-clearer.png"
+      },
+      {
+        "case": "robot-fault",
+        "correctly_stopped": true,
+        "tick": 6501,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The time limit was reached while E01 needs repair; the demo's return and job checks remain unfinished.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "timeout tick=6501, stage=3",
+        "failed_checks": [
+          "all_milestones",
+          "final_memory_states",
+          "missions_completed_and_home"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-robot-fault.png"
+      },
+      {
+        "case": "low-battery",
+        "correctly_stopped": true,
+        "tick": 6501,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The time limit was reached while E01 needs charging; the demo's return and job checks remain unfinished.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "timeout tick=6501, stage=3",
+        "failed_checks": [
+          "all_milestones",
+          "final_memory_states",
+          "missions_completed_and_home"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-low-battery.png"
+      },
+      {
+        "case": "stranded-robot",
+        "correctly_stopped": true,
+        "tick": 6501,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The time limit was reached while E01 out of service; the demo's return and job checks remain unfinished.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "timeout tick=6501, stage=3",
+        "failed_checks": [
+          "all_milestones",
+          "final_memory_states",
+          "missions_completed_and_home"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-stranded-robot.png"
+      },
+      {
+        "case": "conflicting-copy",
+        "correctly_stopped": true,
+        "tick": 3469,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The saved radio marker copies disagree with the outside team's final findings.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "beacon_updates_agree",
+        "failed_checks": [
+          "all_milestones",
+          "beacon_updates_agree"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-conflicting-copy.png"
+      },
+      {
+        "case": "extra-retry",
+        "correctly_stopped": true,
+        "tick": 5249,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The fire job did not have exactly one separate retry.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "two_distinct_fire_attempts",
+        "failed_checks": [
+          "all_milestones",
+          "two_distinct_fire_attempts"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-extra-retry.png"
+      },
+      {
+        "case": "robot-not-home",
+        "correctly_stopped": true,
+        "tick": 6501,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The time limit was reached while E01 out of service; the demo's return and job checks remain unfinished.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "timeout tick=6501, stage=4",
+        "failed_checks": [
+          "all_milestones",
+          "missions_completed_and_home"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-robot-not-home.png"
+      },
+      {
+        "case": "runtime-error",
+        "correctly_stopped": true,
+        "tick": 0,
+        "explanation": {
+          "status": "stopped",
+          "title": "Demo stopped: a check failed",
+          "what": "The simulation stopped because an unexpected error occurred.",
+          "why": "Success requires every final check to pass.",
+          "next": "Press R to restart. Details shows the diagnostic evidence."
+        },
+        "diagnostic": "RuntimeError: deliberate diagnostic failure",
+        "failed_checks": [
+          "all_milestones",
+          "final_memory_states",
+          "missions_completed_and_home",
+          "writer_end",
+          "ona_path"
+        ],
+        "capture": "audit\\phase1\\ui\\failure-runtime-error.png"
+      }
+    ]
+  },
+  "deep_chain": {
+    "beacons": 7,
+    "beacons_connected_to_ona": 7,
+    "max_hops": 7,
+    "frames_transmitted": 4010,
+    "frames_delivered": 24361,
+    "frames_lost_random": 0,
+    "forwarded_by_beacons": 1178,
+    "retries": 0,
+    "duplicates_suppressed": 0,
+    "ona_memory_frames": 16,
+    "ona_heartbeats": 359,
+    "ona_crc_rejected": 0
+  },
+  "comparison": {
+    "placement": "on_route",
+    "runs": [
+      {
+        "seed": 42,
+        "memory": {
+          "debris": [
+            [
+              5,
+              1
+            ]
+          ],
+          "optimal_cells": 22,
+          "events_recovered": 1,
+          "outbound_cells": 36,
+          "ticks_to_site": 542,
+          "mission_ticks": 938,
+          "outbound_revisits": 7,
+          "cells_discovered": 43,
+          "replans": 9,
+          "search_targets": 0,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        },
+        "baseline": {
+          "debris": [
+            [
+              5,
+              1
+            ]
+          ],
+          "optimal_cells": 22,
+          "events_recovered": 1,
+          "outbound_cells": 74,
+          "ticks_to_site": 1142,
+          "mission_ticks": 1538,
+          "outbound_revisits": 9,
+          "cells_discovered": 95,
+          "replans": 0,
+          "search_targets": 30,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        }
+      },
+      {
+        "seed": 43,
+        "memory": {
+          "debris": [
+            [
+              9,
+              11
+            ]
+          ],
+          "optimal_cells": 28,
+          "events_recovered": 1,
+          "outbound_cells": 40,
+          "ticks_to_site": 602,
+          "mission_ticks": 1268,
+          "outbound_revisits": 0,
+          "cells_discovered": 62,
+          "replans": 13,
+          "search_targets": 0,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        },
+        "baseline": {
+          "debris": [
+            [
+              9,
+              11
+            ]
+          ],
+          "optimal_cells": 28,
+          "events_recovered": 1,
+          "outbound_cells": 70,
+          "ticks_to_site": 1077,
+          "mission_ticks": 1593,
+          "outbound_revisits": 15,
+          "cells_discovered": 80,
+          "replans": 0,
+          "search_targets": 25,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        }
+      },
+      {
+        "seed": 44,
+        "memory": {
+          "debris": [
+            [
+              6,
+              3
+            ]
+          ],
+          "optimal_cells": 25,
+          "events_recovered": 1,
+          "outbound_cells": 35,
+          "ticks_to_site": 527,
+          "mission_ticks": 968,
+          "outbound_revisits": 5,
+          "cells_discovered": 44,
+          "replans": 8,
+          "search_targets": 0,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        },
+        "baseline": {
+          "debris": [
+            [
+              6,
+              3
+            ]
+          ],
+          "optimal_cells": 25,
+          "events_recovered": 1,
+          "outbound_cells": 87,
+          "ticks_to_site": 1342,
+          "mission_ticks": 1783,
+          "outbound_revisits": 13,
+          "cells_discovered": 104,
+          "replans": 0,
+          "search_targets": 35,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        }
+      },
+      {
+        "seed": 45,
+        "memory": {
+          "debris": [
+            [
+              1,
+              14
+            ]
+          ],
+          "optimal_cells": 31,
+          "events_recovered": 1,
+          "outbound_cells": 31,
+          "ticks_to_site": 467,
+          "mission_ticks": 998,
+          "outbound_revisits": 0,
+          "cells_discovered": 55,
+          "replans": 5,
+          "search_targets": 0,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        },
+        "baseline": {
+          "debris": [
+            [
+              1,
+              14
+            ]
+          ],
+          "optimal_cells": 31,
+          "events_recovered": 1,
+          "outbound_cells": 31,
+          "ticks_to_site": 482,
+          "mission_ticks": 1013,
+          "outbound_revisits": 0,
+          "cells_discovered": 55,
+          "replans": 0,
+          "search_targets": 15,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        }
+      },
+      {
+        "seed": 46,
+        "memory": {
+          "debris": [
+            [
+              4,
+              1
+            ]
+          ],
+          "optimal_cells": 19,
+          "events_recovered": 1,
+          "outbound_cells": 37,
+          "ticks_to_site": 557,
+          "mission_ticks": 908,
+          "outbound_revisits": 9,
+          "cells_discovered": 43,
+          "replans": 9,
+          "search_targets": 0,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        },
+        "baseline": {
+          "debris": [
+            [
+              4,
+              1
+            ]
+          ],
+          "optimal_cells": 19,
+          "events_recovered": 1,
+          "outbound_cells": 71,
+          "ticks_to_site": 1096,
+          "mission_ticks": 1447,
+          "outbound_revisits": 9,
+          "cells_discovered": 90,
+          "replans": 0,
+          "search_targets": 29,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        }
+      },
+      {
+        "seed": 47,
+        "memory": {
+          "debris": [
+            [
+              4,
+              5
+            ]
+          ],
+          "optimal_cells": 19,
+          "events_recovered": 1,
+          "outbound_cells": 19,
+          "ticks_to_site": 287,
+          "mission_ticks": 638,
+          "outbound_revisits": 0,
+          "cells_discovered": 36,
+          "replans": 3,
+          "search_targets": 0,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        },
+        "baseline": {
+          "debris": [
+            [
+              4,
+              5
+            ]
+          ],
+          "optimal_cells": 19,
+          "events_recovered": 1,
+          "outbound_cells": 19,
+          "ticks_to_site": 296,
+          "mission_ticks": 647,
+          "outbound_revisits": 0,
+          "cells_discovered": 36,
+          "replans": 0,
+          "search_targets": 9,
+          "failed_approaches": 0,
+          "repeated_approaches": 0,
+          "reached_target": true
+        }
+      }
+    ]
+  }
+}

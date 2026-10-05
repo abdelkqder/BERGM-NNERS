@@ -1,0 +1,130 @@
+{
+  "generated_utc": "2026-10-05T20:10:34.655426+00:00",
+  "pdf": "output/pdf/phase1_technical_report.pdf",
+  "page_count": 6,
+  "hashes": {
+    "output/pdf/phase1_technical_report.pdf": "b37fe55bd2f0b2e561bbc57bf93f7d5382782e82e5f240bb9bd40de459505a53",
+    "docs/build_phase1_report.py": "d5f1ee4d0380af882ee7a400eb52a4f115fa7b7d617b1fe730f41041f4e6fe71",
+    "README.md": "600d951db55dca2b8435e7dd7f7220bec73f90adf5a2de2a30689e83491dbe91",
+    "docs/phase1_traceability.md": "180f752b76c24f20fd8257da61e590793aa9bbe3f04beb8a9dd498b869ee60a7"
+  },
+  "source_base_revision": "a7db087ff6c22c372f375f5b43971a02e8903e26",
+  "source_fingerprint_sha256": "89f068d991903aa5641c2733238fa5c24edd08d517311d1b96a86c113c7ed610",
+  "software_manifest_matches": true,
+  "software_suite_record": {
+    "tests": 399,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 100.08
+  },
+  "full_suite_rerun_in_documentation_task": false,
+  "headless_scenarios_passed": [
+    "normal",
+    "writer-failure",
+    "debris-recovery"
+  ],
+  "readme_native_cli_smoke": {
+    "normal": {
+      "driver": "windows",
+      "opened": true,
+      "closed": true
+    },
+    "writer-failure": {
+      "driver": "windows",
+      "opened": true,
+      "closed": true
+    },
+    "debris-recovery": {
+      "driver": "windows",
+      "opened": true,
+      "closed": true
+    }
+  },
+  "checks": {
+    "six_pages": true,
+    "all_pages_rendered_and_visually_inspected": true,
+    "text_within_page_margins": true,
+    "source_metrics_crosschecked": true,
+    "readme_local_links_resolve": true,
+    "pip_check_passed": true,
+    "cli_help_passed": true
+  },
+  "notes": "Six final pages rendered at 125 dpi and visually inspected. Page 6 now uses formal technical synthesis and development prose; scoring details remain in the supporting traceability document. Margin checks passed. Runtime source unchanged; prior software verification retained.",
+  "passed": true,
+  "beacon_documentation_followup": {
+    "date": "2026-10-05T17:14:30.572716+00:00",
+    "files": [
+      "README.md",
+      "docs/communication/beacon-protocol.md",
+      "docs/architecture/system-architecture.md"
+    ],
+    "runtime_changed": false
+  },
+  "portable_readme_followup": {
+    "date": "2026-10-05T19:49:57.691510+00:00",
+    "documented": [
+      "Windows PowerShell",
+      "macOS/Linux Terminal",
+      "headless server/SSH/CI",
+      "clone/ZIP",
+      "new environment after moving",
+      "troubleshooting"
+    ],
+    "checked_here": [
+      "Windows headless three scenarios",
+      "40 dummy-display captures",
+      "pip check",
+      "local documentation links"
+    ],
+    "macos_linux_executed": false,
+    "runtime_changed": false
+  },
+  "report_clarity_followup": {
+    "date": "2026-10-05T20:04:55.783818+00:00",
+    "scope": [
+      "plain-language wording",
+      "implemented versus planned status",
+      "beacon type and RAM storage",
+      "planned Arduino Nano/SX1278 hardware",
+      "seven separate technical criteria with published weights",
+      "proposed SLAM integration and validation steps",
+      "three vector diagrams"
+    ],
+    "diagram_pages": {
+      "finding_and_mission_flow": 1,
+      "39_byte_frame_layout": 2,
+      "blocked_route_recovery": 4
+    },
+    "render_resolution_dpi": 125,
+    "inspected_pages": [
+      "tmp/pdfs/phase1-report/page-1.png",
+      "tmp/pdfs/phase1-report/page-2.png",
+      "tmp/pdfs/phase1-report/page-3.png",
+      "tmp/pdfs/phase1-report/page-4.png",
+      "tmp/pdfs/phase1-report/page-5.png",
+      "tmp/pdfs/phase1-report/page-6.png"
+    ],
+    "runtime_changed": false,
+    "slam_implemented": false,
+    "all_seven_technical_criteria_present": true,
+    "source_manifest_rechecked": true
+  },
+  "jury_presentation_followup": {
+    "date": "2026-10-05T20:10:34.655426+00:00",
+    "rewritten_page": 6,
+    "title": "Technical synthesis and development",
+    "sections": [
+      "Phase 1 technical contribution",
+      "Physical integration and experimental validation",
+      "Localization and mapping with SLAM",
+      "Reproducibility and supporting material"
+    ],
+    "scoring_checklist_in_report": false,
+    "scoring_index_retained": "docs/phase1_traceability.md",
+    "supersedes": "report_clarity_followup criterion table and next-step presentation",
+    "all_six_pages_visually_inspected": true,
+    "runtime_changed": false,
+    "full_suite_rerun": false
+  }
+}

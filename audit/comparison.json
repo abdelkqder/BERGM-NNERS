@@ -1,0 +1,263 @@
+{
+  "placement": "on_route",
+  "runs": [
+    {
+      "seed": 42,
+      "memory": {
+        "debris": [
+          [
+            5,
+            1
+          ]
+        ],
+        "optimal_cells": 22,
+        "events_recovered": 1,
+        "outbound_cells": 36,
+        "ticks_to_site": 542,
+        "mission_ticks": 938,
+        "outbound_revisits": 7,
+        "cells_discovered": 43,
+        "replans": 9,
+        "search_targets": 0,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      },
+      "baseline": {
+        "debris": [
+          [
+            5,
+            1
+          ]
+        ],
+        "optimal_cells": 22,
+        "events_recovered": 1,
+        "outbound_cells": 74,
+        "ticks_to_site": 1142,
+        "mission_ticks": 1538,
+        "outbound_revisits": 9,
+        "cells_discovered": 95,
+        "replans": 0,
+        "search_targets": 30,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      }
+    },
+    {
+      "seed": 43,
+      "memory": {
+        "debris": [
+          [
+            9,
+            11
+          ]
+        ],
+        "optimal_cells": 28,
+        "events_recovered": 1,
+        "outbound_cells": 40,
+        "ticks_to_site": 602,
+        "mission_ticks": 1268,
+        "outbound_revisits": 0,
+        "cells_discovered": 62,
+        "replans": 13,
+        "search_targets": 0,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      },
+      "baseline": {
+        "debris": [
+          [
+            9,
+            11
+          ]
+        ],
+        "optimal_cells": 28,
+        "events_recovered": 1,
+        "outbound_cells": 70,
+        "ticks_to_site": 1077,
+        "mission_ticks": 1593,
+        "outbound_revisits": 15,
+        "cells_discovered": 80,
+        "replans": 0,
+        "search_targets": 25,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      }
+    },
+    {
+      "seed": 44,
+      "memory": {
+        "debris": [
+          [
+            6,
+            3
+          ]
+        ],
+        "optimal_cells": 25,
+        "events_recovered": 1,
+        "outbound_cells": 35,
+        "ticks_to_site": 527,
+        "mission_ticks": 968,
+        "outbound_revisits": 5,
+        "cells_discovered": 44,
+        "replans": 8,
+        "search_targets": 0,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      },
+      "baseline": {
+        "debris": [
+          [
+            6,
+            3
+          ]
+        ],
+        "optimal_cells": 25,
+        "events_recovered": 1,
+        "outbound_cells": 87,
+        "ticks_to_site": 1342,
+        "mission_ticks": 1783,
+        "outbound_revisits": 13,
+        "cells_discovered": 104,
+        "replans": 0,
+        "search_targets": 35,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      }
+    },
+    {
+      "seed": 45,
+      "memory": {
+        "debris": [
+          [
+            1,
+            14
+          ]
+        ],
+        "optimal_cells": 31,
+        "events_recovered": 1,
+        "outbound_cells": 31,
+        "ticks_to_site": 467,
+        "mission_ticks": 998,
+        "outbound_revisits": 0,
+        "cells_discovered": 55,
+        "replans": 5,
+        "search_targets": 0,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      },
+      "baseline": {
+        "debris": [
+          [
+            1,
+            14
+          ]
+        ],
+        "optimal_cells": 31,
+        "events_recovered": 1,
+        "outbound_cells": 31,
+        "ticks_to_site": 482,
+        "mission_ticks": 1013,
+        "outbound_revisits": 0,
+        "cells_discovered": 55,
+        "replans": 0,
+        "search_targets": 15,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      }
+    },
+    {
+      "seed": 46,
+      "memory": {
+        "debris": [
+          [
+            4,
+            1
+          ]
+        ],
+        "optimal_cells": 19,
+        "events_recovered": 1,
+        "outbound_cells": 37,
+        "ticks_to_site": 557,
+        "mission_ticks": 908,
+        "outbound_revisits": 9,
+        "cells_discovered": 43,
+        "replans": 9,
+        "search_targets": 0,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      },
+      "baseline": {
+        "debris": [
+          [
+            4,
+            1
+          ]
+        ],
+        "optimal_cells": 19,
+        "events_recovered": 1,
+        "outbound_cells": 71,
+        "ticks_to_site": 1096,
+        "mission_ticks": 1447,
+        "outbound_revisits": 9,
+        "cells_discovered": 90,
+        "replans": 0,
+        "search_targets": 29,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      }
+    },
+    {
+      "seed": 47,
+      "memory": {
+        "debris": [
+          [
+            4,
+            5
+          ]
+        ],
+        "optimal_cells": 19,
+        "events_recovered": 1,
+        "outbound_cells": 19,
+        "ticks_to_site": 287,
+        "mission_ticks": 638,
+        "outbound_revisits": 0,
+        "cells_discovered": 36,
+        "replans": 3,
+        "search_targets": 0,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      },
+      "baseline": {
+        "debris": [
+          [
+            4,
+            5
+          ]
+        ],
+        "optimal_cells": 19,
+        "events_recovered": 1,
+        "outbound_cells": 19,
+        "ticks_to_site": 296,
+        "mission_ticks": 647,
+        "outbound_revisits": 0,
+        "cells_discovered": 36,
+        "replans": 0,
+        "search_targets": 9,
+        "failed_approaches": 0,
+        "repeated_approaches": 0,
+        "reached_target": true
+      }
+    }
+  ]
+}

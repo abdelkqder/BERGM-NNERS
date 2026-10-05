@@ -1,0 +1,34 @@
+{
+  "seed": 42,
+  "placement": "seal",
+  "new_debris": [
+    [
+      7,
+      4
+    ],
+    [
+      8,
+      5
+    ]
+  ],
+  "existing_debris": [],
+  "target": [
+    7,
+    5
+  ],
+  "t_change": 3612,
+  "target_reachable_after_change": false,
+  "memory_before": {
+    "257": [
+      "FIRE",
+      "UNVERIFIED",
+      1
+    ]
+  },
+  "outcome": "BLOCKED -> Debris Executor cleared it -> mission completed on the second attempt",
+  "debris_executor_used": true,
+  "fire_replans": 1,
+  "discrepancies": 2,
+  "blockages_recorded_by_executors": 2,
+  "end_tick": 5248
+}

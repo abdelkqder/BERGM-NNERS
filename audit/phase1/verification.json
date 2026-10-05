@@ -1,0 +1,432 @@
+{
+  "generated_utc": "2026-10-05T16:36:44.806952+00:00",
+  "base_revision": "a7db087ff6c22c372f375f5b43971a02e8903e26",
+  "working_tree_modified": true,
+  "source_fingerprint_sha256": "89f068d991903aa5641c2733238fa5c24edd08d517311d1b96a86c113c7ed610",
+  "source_manifest": {
+    "audit/verify_phase1.py": "fae27d8f3655e0d2c64f9cbef98296df3b3bc68b5c95b9afaa19dbb67a048d55",
+    "beacon/__init__.py": "40a13cada090b3d43704ef821bb96871035308293fb11ff88f3d20600e158f7a",
+    "beacon/deployer.py": "bea2f53e42c93904479c90cba8877973d86d036c275c578b18b5aa742926ffb2",
+    "beacon/memory_node.py": "598b628419f0a45c63ef3eb4d5e96b612909829af61dda66b64c8afb77f1517e",
+    "beacon/node.py": "4406c77c6abedf77bacf5ac730a9c1c0f7925a50d1585eb7fa9535d33ca2e028",
+    "command_post/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command_post/command_post.py": "05a173a08c0201b4df3f960933c9c57db1f53e76a7f2d8f3af71db148730cfe3",
+    "command_post/fleet.py": "66a853880ec05042fee007ac62a48261c69b10f28f1e6e44d7b30ad3311a1bca",
+    "command_post/map_state.py": "715d5cf447a877709abf0b01b75f471eeb2a282a0cdce59bcbf3e371213f8437",
+    "command_post/mission_dispatcher.py": "f091d59efbfc4152a33664c536997952882e83c0d5d4863137d17227ec1abd57",
+    "command_post/mission_planner.py": "101bbc3aff6f902484094cfcb04d57c01507159462174d933e80b2e40c92d76c",
+    "command_post/planner.py": "781a3a7493e2db6630bb464528cd6f1025e7637102632f465da3c2a4f5936c30",
+    "common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "common/clock.py": "64e5fcc14e08e2b935500368fe2b0ceda8e6af504b36eed857371a90415c45d1",
+    "common/coordinates.py": "607794bcd477ccf467a66be1b740629f0424dfa57bb7de91e88641b3f94e20ad",
+    "common/enums.py": "210d84fa55561dea31544f6fd280e8cd5b57d4c05751891e64fa45e598f24c03",
+    "common/memory.py": "d60ef6eb5d3290712116e7b67d5ed1fbff60ec17f03c439e7ed99b39f7ca9757",
+    "common/mission.py": "c2f3a3960a944e786e6e8ff83fa431ca9c6ee51d31f159af2153cc83707f98ba",
+    "common/models.py": "f1a610373460efe51eae5321b54cbf9a8e32706f204c1704c9d5e7fb0208d0f7",
+    "common/pose.py": "dbd3970966afc323ccb9cab15be4812c691363329119090fde3baed617018214",
+    "common/protocol.py": "81a10b6bce9ba18390216136ceb8e6c6e14dbd465a2da6b2e6502580102135c6",
+    "communication/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "communication/interface.py": "2b881cb8d63074412026a44a8a2888ee090743c389edf157ff20dfda1a543485",
+    "communication/lora_transport.py": "a2516d4b07acdbc8d33af8f67a461540f3b5a63aa67479516a9659b586ac8275",
+    "communication/mesh.py": "46a71052b25dd4e4b983a7cb1fc0589253d5c77d40ef95b18fef748326ab3dd4",
+    "communication/mock_transport.py": "5f3a33bd9af86b0e73f12a3d91446950aa9e34e38cc25e5e4f52784696963b70",
+    "executor_robot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "executor_robot/capabilities.py": "20e7f5bfbac127a024c9abc8f957b019482a649bfe0dd13dfe014b32f912421b",
+    "executor_robot/executor.py": "744e849f3d2c92f9ca15a1f9ccf8be0587505cde0b91178704cb07feba103e55",
+    "gateway/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gateway/ona_gateway.py": "9dc345c6ace900799fdd433428e56d27742a7c88168209e43b1d29316afaa6e7",
+    "navigation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "navigation/engine.py": "d36c5ec96f8a858fdf5d6a342ea02ca9899b9fbaf2284cb5ab60d30c3e79fdfc",
+    "requirements.txt": "821eaba5333d88c36924f45bfdceaf5b79a1a6087218332c122d1bb66d0a9968",
+    "run_simulation.py": "c82b6a69d34925a1ff6987c7d04ba8a1b455b09f51a5f7641b7be64f3ad0a8c1",
+    "simulation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "simulation/benchmark.py": "15bd3aa7f66be6b6b0d6178b514956f6bf57236364b7193144ce5add745eaf68",
+    "simulation/compare_memory.py": "a110bb9914074113c36b6eeb44b46a05371100445539573da5a684875fb79a24",
+    "simulation/demo_language.py": "01b250701251c7674a21d5600a65ff3bccf0394c453c9fb9f1736f4c2dd71df2",
+    "simulation/dynamic_debris.py": "79e433a7978e6d1cb19d25af3001397a4c73b1a27350f783c0747b46ad1cec38",
+    "simulation/fleet_demo.py": "816e47634c708d5df46b14bf0e300e9817f3932b4e84f9c42320c74676ef2ccc",
+    "simulation/global_demo.py": "34e0e0738f9ac17fe5038111ec02f94ed29c275cae06abcca6faa551acede1df",
+    "simulation/inspection_panel.py": "b87e152be013af24be096d346ce3b206b43d79bd81fafaa9edd1375d425ba6db",
+    "simulation/jury_demo.py": "b0fc7dc279245cfb3580bd3c386994e667476e73dcfd6c9f3833bcb769f7228a",
+    "simulation/metrics.py": "fad61c7d5c06be2471d304144e26e750d44a87c8c75a3a254da707b4068c0546",
+    "simulation/phase1.py": "2475261f09345258346eda0cdc1fc6c976309448c1138258ad51f25a7694ec14",
+    "simulation/renderer.py": "5460abe88b5821a62d7b3811db5d241fe7e3d466e441e6bddffb0a97fc8c9306",
+    "simulation/scenario.py": "4a4a2cba57bb4dd6d2ebf1dab01a0209ad40620464377e4385361c7e9e2de87c",
+    "simulation/snapshot.py": "cbabfba074332a5931ab583036b84069f459285508c18f511bfc2e67d358a84b",
+    "simulation/system.py": "6ae8fec30bed5321ed989ef6bc42a53ffe7ed04539cd60965c5bd58069c2f7f2",
+    "simulation/world.py": "d48feedfb21d674273cfc25a800c322d2efc3c639c12fd90c689bf11239b3e7d",
+    "simulation/writer_demo.py": "20a37b9372bb9b27c2f4e7475bb502acea2853e6ea18f2f28e890497aaf21799",
+    "tests/__init__.py": "8ae5663edf641b440de6b0af98c53e46ae6b77d583ce5b144154955098f7a5cb",
+    "tests/test_architecture.py": "1e66784be325ba00ae8a3ac88c655b2eef5b99624bb71cdab1227639e1e63e4a",
+    "tests/test_beacon.py": "34a596ba0b36579d3c5498cff5d4ca70faa29e0bc91ec5bd37fb0f0d14452a65",
+    "tests/test_benchmark.py": "a115d927c340c992a335ad15866ca2df020e43f19fc94b01c567a5d44f25cccb",
+    "tests/test_command_post.py": "f157bd6eb670695ceed658d8f473c47b062e84b60af0043877d91ca621171d1e",
+    "tests/test_concurrent.py": "0575c27a48f97d4a3c00defc349c64dede08c7e73201b9f5e196100f3d33e4c8",
+    "tests/test_coordinates.py": "90f8ff33c91c203bcf9dda1c9820abffd9eece6d9cc460a0a5b8a9c56e906a0a",
+    "tests/test_executor.py": "0eea1c90440d8a4903d0e52e1fdd7fe8c0cf3910f0168d38a4939de7e23c9748",
+    "tests/test_executor_inherited.py": "c9851f4e36babc8cacb1e43fad0f1e403bc685fb60f08b2c413715b673441051",
+    "tests/test_gateway.py": "dae929f7faccbbdbf91ae0061f985707b2f416d159e56ed377fd73c82e268a37",
+    "tests/test_jury_demo.py": "d8bd2f4ef49ef90131e5101e087cb4ae6bf0a51a9bcd5ded460aac7769b0af86",
+    "tests/test_jury_failures.py": "cfe6751427bdfc9c923565e2633efa05547eefbaeb1d5fc225b0e91a8e0dfdd0",
+    "tests/test_living_map_lifecycle.py": "61fd37b85e69fadb9c263d30ecb436b838bb2fbe2182df5621c4a39ce9484397",
+    "tests/test_memory.py": "7071120180d3066c855ae75c59ae0d72b0082475c32d5b8a2eabbbb98d4d5688",
+    "tests/test_memory_decision.py": "c4c37b24312e508e405a58bc4bf24956fc35b19562a0da5963507551c8da79a0",
+    "tests/test_memory_versioning.py": "e937fe5ba5d3e27af954ede23ce0fd8d390edbc312a9cf6510431072ec9afd97",
+    "tests/test_mesh_network.py": "52e7b08b5f492f26b3701053197738068cdaab1b661808d0d5c33600d4bf3a7d",
+    "tests/test_mission_dispatcher.py": "92a1a0c6682b887442cc2f5dcf4a8a12b55260cad0ab268515b581d14f1597b5",
+    "tests/test_navigation.py": "0b655ee5797f0e018bbc4971187f8775384da2dca409988ad26bdd645fb9a480",
+    "tests/test_navigation_dynamic.py": "a1a15fa8095fa388b7e53da39cf2573adbf95fd7d959a0c10419911e2722af6c",
+    "tests/test_ona_mesh.py": "72fe096efef47d795e7df3c1c5f8678ec89162d6325a313358bf280a180b47e6",
+    "tests/test_perception.py": "fcfee64cb5117d741175cc4c1891784bc1cdff47e428e5a7e364cdd929837a3b",
+    "tests/test_phase1_repairs.py": "ebc56d8c6142d43bfae9d3ea47e35700fb5fdea71ff67d4cd863c159fccfcc32",
+    "tests/test_phase1_system.py": "1ff2d60cff64aed1b9b9892a37a104b27acd82b4d6a51313e2e853e6b4c9a8f4",
+    "tests/test_pose_and_frames.py": "87f75bf20904420155fc8719716d7eb4606352e51bb6e05f53a5c6ba49f7bcfb",
+    "tests/test_protocol.py": "15cf61986ed3a3b96fae96fbb3840d325f59960390c8d3bfea21ad37fbc44023",
+    "tests/test_scenario.py": "82840fc4e94fbde81d4c7358d28f826093a18655038378742e84957d6ba9e325",
+    "tests/test_system.py": "ee0efc8b2981a8b1b9b84f6fa41bcea0736fa83eac6bd69c7ccf3524feb63076",
+    "tests/test_world.py": "2e577a737f44a8dd2700fef64be8311e5c6edf1cffb36dbc3c21f78a84fcd474",
+    "tests/test_writer.py": "425c06039c53c6d93165f37f1fe1409e8aea1ef87c5ecd8ff2aa87dfb477bf3a",
+    "tests/test_writer_replacement.py": "8785fc73bb979e4aa8b89d772ca737e0541f51649d1d52b5670c6a7c2ac47540",
+    "writer_robot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "writer_robot/exploration.py": "c0ae7954cf51e515d80171abd5e893ea9d94f9392bf9b036f24a0e366fb17cc0",
+    "writer_robot/memory_decision.py": "d28b35dc1cf02ef8184f31dac1d291b8b8227fe50b0b7e97e4202f040940da5e",
+    "writer_robot/perception.py": "c20a66b9fb067aea129ee871ae7022eef659db9792bdb1d31b79427c3c0a1051",
+    "writer_robot/placement.py": "669a26333203d814c753bf38319c580009f528c5e9fffdef24164137892d08f2",
+    "writer_robot/writer.py": "7754a65169158f6dc24ad9849bf94a807cc00444d92a4a22469ebeaa23315d8f"
+  },
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "commands": [
+    ".\\.venv\\Scripts\\python.exe -B -m pytest -q -p no:cacheprovider --junitxml=audit/phase1/pytest.xml",
+    ".\\.venv\\Scripts\\python.exe -B -m simulation.jury_demo --scenario all --seed 42 --output audit/phase1/scenarios.json --capture-dir audit/phase1/captures",
+    ".\\.venv\\Scripts\\python.exe -B audit/verify_phase1.py --native"
+  ],
+  "pytest": {
+    "tests": 399,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 100.08
+  },
+  "scenarios": {
+    "normal": {
+      "passed": true,
+      "tick": 3469,
+      "checks": {
+        "all_milestones": true,
+        "final_memory_states": true,
+        "missions_completed_and_home": true,
+        "writer_end": true,
+        "ona_path": true,
+        "queue_unique": true,
+        "beacon_updates_agree": true
+      }
+    },
+    "writer-failure": {
+      "passed": true,
+      "tick": 2329,
+      "checks": {
+        "all_milestones": true,
+        "final_memory_states": true,
+        "missions_completed_and_home": true,
+        "writer_end": true,
+        "ona_path": true,
+        "queue_unique": true,
+        "beacon_updates_agree": true
+      }
+    },
+    "debris-recovery": {
+      "passed": true,
+      "tick": 5249,
+      "checks": {
+        "all_milestones": true,
+        "final_memory_states": true,
+        "missions_completed_and_home": true,
+        "writer_end": true,
+        "ona_path": true,
+        "queue_unique": true,
+        "two_distinct_fire_attempts": true,
+        "debris_executor_used": true,
+        "clearance_received": true,
+        "beacon_updates_agree": true
+      }
+    }
+  },
+  "supplemental_checks": {
+    "age_decay": true,
+    "stale_without_lifecycle_change": true,
+    "executor_refresh": true,
+    "contradiction_by_sensing": true,
+    "chain_formed": true,
+    "retained_while_disconnected": true,
+    "delivered_after_reconnect": true,
+    "source_copy_survives": true,
+    "deep_chain": true,
+    "comparison_six_seeds": true,
+    "comparison_targets_reached": true,
+    "ui_controls": true,
+    "deliberate_failures_stop": true
+  },
+  "native_ui_driver": "windows",
+  "cli_smoke": [
+    {
+      "scenario": "normal",
+      "display_driver": "windows",
+      "returned_cleanly": true
+    },
+    {
+      "scenario": "writer-failure",
+      "display_driver": "windows",
+      "returned_cleanly": true
+    },
+    {
+      "scenario": "debris-recovery",
+      "display_driver": "windows",
+      "returned_cleanly": true
+    }
+  ],
+  "visual_inspection": {
+    "passed": true,
+    "files": [
+      "captures/normal-00-mission.png",
+      "captures/writer-failure-02-memory.png",
+      "captures/debris-recovery-04-mission.png",
+      "captures/debris-recovery-05-memory.png",
+      "ui/normal-memory.png",
+      "ui/normal-memory-details.png",
+      "ui/debris-recovery-mission-details.png",
+      "ui/failure-conflicting-copy.png",
+      "ui/failure-no-clearer.png",
+      "ui/failure-robot-fault.png",
+      "ui/failure-missing-brief.png"
+    ],
+    "notes": "Inspected rendered frames: pinned plain explanations, both views, Details, blockage/retry and stopped cases; no clipping observed. Scripted native events are distinct from human manual acceptance."
+  },
+  "capture_count": 74,
+  "passed": true,
+  "deliberate_failures": [
+    {
+      "case": "early-writer",
+      "correctly_stopped": true,
+      "tick": 6501,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The time limit was reached while the explorer stopped before any findings were saved.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "timeout tick=6501, stage=0",
+      "failed_checks": [
+        "all_milestones",
+        "final_memory_states",
+        "missions_completed_and_home",
+        "writer_end",
+        "ona_path"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-early-writer.png"
+    },
+    {
+      "case": "outside-link",
+      "correctly_stopped": true,
+      "tick": 6501,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The time limit was reached while the outside team has not received all required findings.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "timeout tick=6501, stage=1",
+      "failed_checks": [
+        "all_milestones",
+        "final_memory_states",
+        "missions_completed_and_home",
+        "ona_path"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-outside-link.png"
+    },
+    {
+      "case": "missing-brief",
+      "correctly_stopped": true,
+      "tick": 6501,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The time limit was reached while the response robots have not received their instructions.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "timeout tick=6501, stage=2",
+      "failed_checks": [
+        "all_milestones",
+        "final_memory_states",
+        "missions_completed_and_home",
+        "ona_path"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-missing-brief.png"
+    },
+    {
+      "case": "no-clearer",
+      "correctly_stopped": true,
+      "tick": 6501,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The time limit was reached while the route is blocked and the rubble removal robot is out of service.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "timeout tick=6501, stage=4",
+      "failed_checks": [
+        "all_milestones",
+        "final_memory_states",
+        "missions_completed_and_home",
+        "two_distinct_fire_attempts",
+        "debris_executor_used",
+        "clearance_received"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-no-clearer.png"
+    },
+    {
+      "case": "robot-fault",
+      "correctly_stopped": true,
+      "tick": 6501,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The time limit was reached while E01 needs repair; the demo's return and job checks remain unfinished.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "timeout tick=6501, stage=3",
+      "failed_checks": [
+        "all_milestones",
+        "final_memory_states",
+        "missions_completed_and_home"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-robot-fault.png"
+    },
+    {
+      "case": "low-battery",
+      "correctly_stopped": true,
+      "tick": 6501,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The time limit was reached while E01 needs charging; the demo's return and job checks remain unfinished.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "timeout tick=6501, stage=3",
+      "failed_checks": [
+        "all_milestones",
+        "final_memory_states",
+        "missions_completed_and_home"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-low-battery.png"
+    },
+    {
+      "case": "stranded-robot",
+      "correctly_stopped": true,
+      "tick": 6501,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The time limit was reached while E01 out of service; the demo's return and job checks remain unfinished.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "timeout tick=6501, stage=3",
+      "failed_checks": [
+        "all_milestones",
+        "final_memory_states",
+        "missions_completed_and_home"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-stranded-robot.png"
+    },
+    {
+      "case": "conflicting-copy",
+      "correctly_stopped": true,
+      "tick": 3469,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The saved radio marker copies disagree with the outside team's final findings.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "beacon_updates_agree",
+      "failed_checks": [
+        "all_milestones",
+        "beacon_updates_agree"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-conflicting-copy.png"
+    },
+    {
+      "case": "extra-retry",
+      "correctly_stopped": true,
+      "tick": 5249,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The fire job did not have exactly one separate retry.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "two_distinct_fire_attempts",
+      "failed_checks": [
+        "all_milestones",
+        "two_distinct_fire_attempts"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-extra-retry.png"
+    },
+    {
+      "case": "robot-not-home",
+      "correctly_stopped": true,
+      "tick": 6501,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The time limit was reached while E01 out of service; the demo's return and job checks remain unfinished.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "timeout tick=6501, stage=4",
+      "failed_checks": [
+        "all_milestones",
+        "missions_completed_and_home"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-robot-not-home.png"
+    },
+    {
+      "case": "runtime-error",
+      "correctly_stopped": true,
+      "tick": 0,
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The simulation stopped because an unexpected error occurred.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "diagnostic": "RuntimeError: deliberate diagnostic failure",
+      "failed_checks": [
+        "all_milestones",
+        "final_memory_states",
+        "missions_completed_and_home",
+        "writer_end",
+        "ona_path"
+      ],
+      "capture": "audit\\phase1\\ui\\failure-runtime-error.png"
+    }
+  ],
+  "timeout_cli": {
+    "exit_code": 1,
+    "evidence": "timeout.json",
+    "correctly_stopped": true
+  },
+  "targeted_followup": {
+    "command": ".\\.venv\\Scripts\\python.exe -B -m pytest -q tests/test_jury_demo.py tests/test_jury_failures.py -p no:cacheprovider",
+    "passed": 17
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "network": {
+    "beacons": 2,
+    "beacons_connected_to_ona": 2,
+    "max_hops": 2,
+    "frames_transmitted": 375,
+    "frames_delivered": 3417,
+    "frames_lost_random": 0,
+    "forwarded_by_beacons": 12,
+    "retries": 0,
+    "duplicates_suppressed": 0,
+    "ona_memory_frames": 6,
+    "ona_heartbeats": 20,
+    "ona_crc_rejected": 0
+  },
+  "decisions": [
+    {
+      "tick": 1901,
+      "mission_id": "M002",
+      "memory_id": 258,
+      "event_type": "FIRE",
+      "state": "UNVERIFIED",
+      "executor": "E01",
+      "priority": 16.55,
+      "components": {
+        "base": 18.55,
+        "class_weight": 1.2,
+        "status_factor": 0.8,
+        "travel_penalty": 1.26,
+        "distance_m": 3.61,
+        "blocker_boost": 0.0,
+        "age_s": 46.1,
+        "live_confidence": 0.7
+      },
+      "selection": {
+        "required": "FIRE",
+        "chosen": "E01",
+        "match": "specialist FIRE",
+        "battery_pct": 100,
+        "missions_done": 0,
+        "alternatives": [
+          "E02",
+          "E03"
+        ],
+        "rejected": [
+          "E04: lacks FIRE capability",
+          "E05: lacks FIRE capability",
+          "E06: lacks FIRE capability",
+          "E07: lacks FIRE capability",
+          "E08: lacks FIRE capability",
+          "E09: lacks FIRE capability",
+          "E10: lacks FIRE capability"
+        ],
+        "not_available": [],
+        "why": "specialist FIRE; battery 100%; 0 mission(s) done"
+      }
+    },
+    {
+      "tick": 1901,
+      "mission_id": "M001",
+      "memory_id": 257,
+      "event_type": "GAS",
+      "state": "UNVERIFIED",
+      "executor": "E07",
+      "priority": 9.92,
+      "components": {
+        "base": 13.3,
+        "class_weight": 1.0,
+        "status_factor": 0.8,
+        "travel_penalty": 0.72,
+        "distance_m": 2.06,
+        "blocker_boost": 0.0,
+        "age_s": 56.1,
+        "live_confidence": 0.63
+      },
+      "selection": {
+        "required": "GAS",
+        "chosen": "E07",
+        "match": "specialist GAS",
+        "battery_pct": 100,
+        "missions_done": 0,
+        "alternatives": [
+          "E08"
+        ],
+        "rejected": [
+          "E02: lacks GAS capability",
+          "E03: lacks GAS capability",
+          "E04: lacks GAS capability",
+          "E05: lacks GAS capability",
+          "E06: lacks GAS capability",
+          "E09: lacks GAS capability",
+          "E10: lacks GAS capability"
+        ],
+        "not_available": [
+          "E01: AVAILABLE"
+        ],
+        "why": "specialist GAS; battery 100%; 0 mission(s) done"
+      }
+    }
+  ],
+  "records": [
+    {
+      "memory_id": 257,
+      "host_beacon_id": 1,
+      "version": 2,
+      "source": "E7",
+      "passage_state": null,
+      "mission_relevance": 0.449,
+      "last_update_ts": 1790000203,
+      "hop_count": 0,
+      "beacon_id": 1,
+      "event_type": "GAS",
+      "x_local": 0.5,
+      "y_local": -2.0,
+      "severity": 2,
+      "state": "ACTIVE",
+      "verified_by": "E7",
+      "live_confidence_pct": 90,
+      "is_stale": false,
+      "age_s": 27.8,
+      "gps_lat": 36.806482,
+      "gps_lon": 10.1815056,
+      "history": [
+        "tick=1342 v1 UNVERIFIED (first received, from W1 via beacon #1)",
+        "tick=2033 v2 UNVERIFIED->ACTIVE by E7"
+      ]
+    },
+    {
+      "memory_id": 258,
+      "host_beacon_id": 2,
+      "version": 2,
+      "source": "E1",
+      "passage_state": null,
+      "mission_relevance": 0.0,
+      "last_update_ts": 1790000211,
+      "hop_count": 1,
+      "beacon_id": 2,
+      "event_type": "FIRE",
+      "x_local": 2.0,
+      "y_local": -3.0,
+      "severity": 3,
+      "state": "CLEARED",
+      "verified_by": "E1",
+      "live_confidence_pct": 91,
+      "is_stale": false,
+      "age_s": 19.8,
+      "gps_lat": 36.806473,
+      "gps_lon": 10.1815225,
+      "history": [
+        "tick=1443 v1 UNVERIFIED (first received, from W1 via beacon #2)",
+        "tick=2119 v2 UNVERIFIED->CLEARED by E1"
+      ]
+    }
+  ]
+}

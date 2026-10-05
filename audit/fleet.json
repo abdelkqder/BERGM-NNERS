@@ -1,0 +1,305 @@
+{
+  "decisions": [
+    {
+      "tick": 4196,
+      "mission_id": "M004",
+      "memory_id": 260,
+      "event_type": "VICTIM_PRESENCE",
+      "state": "UNVERIFIED",
+      "executor": "E04",
+      "priority": 21.24,
+      "components": {
+        "base": 22.3,
+        "class_weight": 1.3,
+        "status_factor": 0.8,
+        "travel_penalty": 1.96,
+        "distance_m": 5.59,
+        "blocker_boost": 0.0,
+        "age_s": 256.6,
+        "live_confidence": 0.45
+      },
+      "selection": {
+        "required": "VICTIM",
+        "chosen": "E04",
+        "match": "specialist VICTIM",
+        "battery_pct": 100,
+        "missions_done": 0,
+        "alternatives": [
+          "E05",
+          "E06"
+        ],
+        "rejected": [
+          "E01: lacks VICTIM capability",
+          "E02: lacks VICTIM capability",
+          "E03: lacks VICTIM capability",
+          "E07: lacks VICTIM capability",
+          "E08: lacks VICTIM capability",
+          "E09: lacks VICTIM capability",
+          "E10: lacks VICTIM capability"
+        ],
+        "not_available": [],
+        "why": "specialist VICTIM; battery 100%; 0 mission(s) done"
+      }
+    },
+    {
+      "tick": 4196,
+      "mission_id": "M005",
+      "memory_id": 261,
+      "event_type": "FIRE",
+      "state": "UNVERIFIED",
+      "executor": "E01",
+      "priority": 16.17,
+      "components": {
+        "base": 17.6,
+        "class_weight": 1.2,
+        "status_factor": 0.8,
+        "travel_penalty": 0.72,
+        "distance_m": 2.06,
+        "blocker_boost": 0.0,
+        "age_s": 218.6,
+        "live_confidence": 0.5
+      },
+      "selection": {
+        "required": "FIRE",
+        "chosen": "E01",
+        "match": "specialist FIRE",
+        "battery_pct": 100,
+        "missions_done": 0,
+        "alternatives": [
+          "E02",
+          "E03"
+        ],
+        "rejected": [
+          "E05: lacks FIRE capability",
+          "E06: lacks FIRE capability",
+          "E07: lacks FIRE capability",
+          "E08: lacks FIRE capability",
+          "E09: lacks FIRE capability",
+          "E10: lacks FIRE capability"
+        ],
+        "not_available": [
+          "E04: AVAILABLE"
+        ],
+        "why": "specialist FIRE; battery 100%; 0 mission(s) done"
+      }
+    },
+    {
+      "tick": 4196,
+      "mission_id": "M001",
+      "memory_id": 257,
+      "event_type": "FIRE",
+      "state": "UNVERIFIED",
+      "executor": "E02",
+      "priority": 15.36,
+      "components": {
+        "base": 16.75,
+        "class_weight": 1.2,
+        "status_factor": 0.8,
+        "travel_penalty": 0.72,
+        "distance_m": 2.06,
+        "blocker_boost": 0.0,
+        "age_s": 413.6,
+        "live_confidence": 0.34
+      },
+      "selection": {
+        "required": "FIRE",
+        "chosen": "E02",
+        "match": "specialist FIRE",
+        "battery_pct": 100,
+        "missions_done": 0,
+        "alternatives": [
+          "E03"
+        ],
+        "rejected": [
+          "E05: lacks FIRE capability",
+          "E06: lacks FIRE capability",
+          "E07: lacks FIRE capability",
+          "E08: lacks FIRE capability",
+          "E09: lacks FIRE capability",
+          "E10: lacks FIRE capability"
+        ],
+        "not_available": [
+          "E01: AVAILABLE",
+          "E04: AVAILABLE"
+        ],
+        "why": "specialist FIRE; battery 100%; 0 mission(s) done"
+      }
+    },
+    {
+      "tick": 4196,
+      "mission_id": "M002",
+      "memory_id": 258,
+      "event_type": "FIRE",
+      "state": "UNVERIFIED",
+      "executor": "E03",
+      "priority": 14.87,
+      "components": {
+        "base": 16.8,
+        "class_weight": 1.2,
+        "status_factor": 0.8,
+        "travel_penalty": 1.26,
+        "distance_m": 3.61,
+        "blocker_boost": 0.0,
+        "age_s": 403.6,
+        "live_confidence": 0.34
+      },
+      "selection": {
+        "required": "FIRE",
+        "chosen": "E03",
+        "match": "specialist FIRE",
+        "battery_pct": 100,
+        "missions_done": 0,
+        "alternatives": [],
+        "rejected": [
+          "E05: lacks FIRE capability",
+          "E06: lacks FIRE capability",
+          "E07: lacks FIRE capability",
+          "E08: lacks FIRE capability",
+          "E09: lacks FIRE capability",
+          "E10: lacks FIRE capability"
+        ],
+        "not_available": [
+          "E01: AVAILABLE",
+          "E02: AVAILABLE",
+          "E04: AVAILABLE"
+        ],
+        "why": "specialist FIRE; battery 100%; 0 mission(s) done"
+      }
+    },
+    {
+      "tick": 4196,
+      "mission_id": "M006",
+      "memory_id": 262,
+      "event_type": "GAS",
+      "state": "UNVERIFIED",
+      "executor": "E07",
+      "priority": 8.63,
+      "components": {
+        "base": 12.8,
+        "class_weight": 1.0,
+        "status_factor": 0.8,
+        "travel_penalty": 1.61,
+        "distance_m": 4.61,
+        "blocker_boost": 0.0,
+        "age_s": 158.6,
+        "live_confidence": 0.52
+      },
+      "selection": {
+        "required": "GAS",
+        "chosen": "E07",
+        "match": "specialist GAS",
+        "battery_pct": 100,
+        "missions_done": 0,
+        "alternatives": [
+          "E08"
+        ],
+        "rejected": [
+          "E05: lacks GAS capability",
+          "E06: lacks GAS capability",
+          "E09: lacks GAS capability",
+          "E10: lacks GAS capability"
+        ],
+        "not_available": [
+          "E01: AVAILABLE",
+          "E02: AVAILABLE",
+          "E03: AVAILABLE",
+          "E04: AVAILABLE"
+        ],
+        "why": "specialist GAS; battery 100%; 0 mission(s) done"
+      }
+    },
+    {
+      "tick": 4414,
+      "mission_id": "M003",
+      "memory_id": 259,
+      "event_type": "FIRE",
+      "state": "UNVERIFIED",
+      "executor": "E02",
+      "priority": 14.17,
+      "components": {
+        "base": 16.95,
+        "class_weight": 1.2,
+        "status_factor": 0.8,
+        "travel_penalty": 2.1,
+        "distance_m": 6.0,
+        "blocker_boost": 0.0,
+        "age_s": 357.4,
+        "live_confidence": 0.38
+      },
+      "selection": {
+        "required": "FIRE",
+        "chosen": "E02",
+        "match": "specialist FIRE",
+        "battery_pct": 100,
+        "missions_done": 1,
+        "alternatives": [],
+        "rejected": [
+          "E05: lacks FIRE capability",
+          "E06: lacks FIRE capability",
+          "E08: lacks FIRE capability",
+          "E09: lacks FIRE capability",
+          "E10: lacks FIRE capability"
+        ],
+        "not_available": [
+          "E01: WORKING",
+          "E03: UPDATE_MEMORY",
+          "E04: DEPLOYING",
+          "E07: DEPLOYING"
+        ],
+        "why": "specialist FIRE; battery 100%; 1 mission(s) done"
+      }
+    }
+  ],
+  "fleet": [
+    [
+      "E01",
+      "AVAILABLE",
+      1
+    ],
+    [
+      "E02",
+      "AVAILABLE",
+      2
+    ],
+    [
+      "E03",
+      "AVAILABLE",
+      1
+    ],
+    [
+      "E04",
+      "AVAILABLE",
+      1
+    ],
+    [
+      "E05",
+      "AVAILABLE",
+      0
+    ],
+    [
+      "E06",
+      "AVAILABLE",
+      0
+    ],
+    [
+      "E07",
+      "AVAILABLE",
+      1
+    ],
+    [
+      "E08",
+      "AVAILABLE",
+      0
+    ],
+    [
+      "E09",
+      "AVAILABLE",
+      0
+    ],
+    [
+      "E10",
+      "AVAILABLE",
+      0
+    ]
+  ]
+}

@@ -1,0 +1,655 @@
+{
+  "model_fields": {
+    "BeaconMessage": [
+      {
+        "name": "beacon_id",
+        "type": "int"
+      },
+      {
+        "name": "event_type",
+        "type": "str"
+      },
+      {
+        "name": "x_local",
+        "type": "float"
+      },
+      {
+        "name": "y_local",
+        "type": "float"
+      },
+      {
+        "name": "timestamp",
+        "type": "int"
+      },
+      {
+        "name": "severity",
+        "type": "int"
+      },
+      {
+        "name": "initial_confidence",
+        "type": "int"
+      },
+      {
+        "name": "battery_pct",
+        "type": "int"
+      },
+      {
+        "name": "version",
+        "type": "int"
+      },
+      {
+        "name": "gps_lat",
+        "type": "Optional[float]"
+      },
+      {
+        "name": "gps_lon",
+        "type": "Optional[float]"
+      }
+    ],
+    "MemoryExt": [
+      {
+        "name": "memory_id",
+        "type": "int"
+      },
+      {
+        "name": "version",
+        "type": "int"
+      },
+      {
+        "name": "state",
+        "type": "MemoryState"
+      },
+      {
+        "name": "passage",
+        "type": "Optional[PassageState]"
+      },
+      {
+        "name": "last_update_ts",
+        "type": "int"
+      },
+      {
+        "name": "source",
+        "type": "int"
+      }
+    ],
+    "ProgramCommand": [
+      {
+        "name": "beacon_id",
+        "type": "int"
+      },
+      {
+        "name": "x_local",
+        "type": "float"
+      },
+      {
+        "name": "y_local",
+        "type": "float"
+      },
+      {
+        "name": "record",
+        "type": "Optional[Tuple[BeaconMessage, MemoryExt]]"
+      },
+      {
+        "name": "set_position",
+        "type": "bool"
+      }
+    ],
+    "MemoryRecord": [
+      {
+        "name": "beacon_id",
+        "type": "int"
+      },
+      {
+        "name": "event_type",
+        "type": "str"
+      },
+      {
+        "name": "x_local",
+        "type": "float"
+      },
+      {
+        "name": "y_local",
+        "type": "float"
+      },
+      {
+        "name": "timestamp",
+        "type": "int"
+      },
+      {
+        "name": "severity",
+        "type": "int"
+      },
+      {
+        "name": "initial_confidence",
+        "type": "int"
+      },
+      {
+        "name": "gps_lat",
+        "type": "Optional[float]"
+      },
+      {
+        "name": "gps_lon",
+        "type": "Optional[float]"
+      },
+      {
+        "name": "version",
+        "type": "int"
+      },
+      {
+        "name": "state",
+        "type": "MemoryState"
+      },
+      {
+        "name": "verified_by",
+        "type": "Optional[str]"
+      },
+      {
+        "name": "history",
+        "type": "List[str]"
+      },
+      {
+        "name": "memory_id",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "source",
+        "type": "str"
+      },
+      {
+        "name": "source_node",
+        "type": "int"
+      },
+      {
+        "name": "last_update_ts",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "observed_confidence",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "passage_state",
+        "type": "Optional[PassageState]"
+      },
+      {
+        "name": "battery_pct",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "hop_count",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "host_beacon_id",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "corroborations",
+        "type": "int"
+      },
+      {
+        "name": "received_tick",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "clock",
+        "type": "Callable[[], float]"
+      }
+    ],
+    "BeaconHealth": [
+      {
+        "name": "beacon_id",
+        "type": "int"
+      },
+      {
+        "name": "x_local",
+        "type": "float"
+      },
+      {
+        "name": "y_local",
+        "type": "float"
+      },
+      {
+        "name": "gps",
+        "type": "Tuple[float, float]"
+      },
+      {
+        "name": "hops_to_ona",
+        "type": "int"
+      },
+      {
+        "name": "parent_id",
+        "type": "int"
+      },
+      {
+        "name": "battery_pct",
+        "type": "int"
+      },
+      {
+        "name": "n_records",
+        "type": "int"
+      },
+      {
+        "name": "max_version",
+        "type": "int"
+      },
+      {
+        "name": "last_update_ts",
+        "type": "int"
+      },
+      {
+        "name": "last_seen_tick",
+        "type": "int"
+      },
+      {
+        "name": "hop_count",
+        "type": "int"
+      }
+    ],
+    "MissionRecord": [
+      {
+        "name": "mission_id",
+        "type": "str"
+      },
+      {
+        "name": "beacon_id",
+        "type": "int"
+      },
+      {
+        "name": "event_type",
+        "type": "str"
+      },
+      {
+        "name": "priority_score",
+        "type": "float"
+      },
+      {
+        "name": "x_local",
+        "type": "float"
+      },
+      {
+        "name": "y_local",
+        "type": "float"
+      },
+      {
+        "name": "severity",
+        "type": "int"
+      },
+      {
+        "name": "required_capability",
+        "type": "RobotCapability"
+      },
+      {
+        "name": "arrival_tick",
+        "type": "int"
+      },
+      {
+        "name": "status",
+        "type": "MissionStatus"
+      },
+      {
+        "name": "assigned_executor_id",
+        "type": "Optional[str]"
+      },
+      {
+        "name": "dispatched_tick",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "completed_tick",
+        "type": "Optional[int]"
+      }
+    ],
+    "FleetEntry": [
+      {
+        "name": "executor_id",
+        "type": "str"
+      },
+      {
+        "name": "capabilities",
+        "type": "List[RobotCapability]"
+      },
+      {
+        "name": "state",
+        "type": "ExecutorState"
+      },
+      {
+        "name": "battery_pct",
+        "type": "int"
+      },
+      {
+        "name": "mission_id",
+        "type": "Optional[str]"
+      },
+      {
+        "name": "last_report_tick",
+        "type": "int"
+      },
+      {
+        "name": "missions_done",
+        "type": "int"
+      },
+      {
+        "name": "reserved",
+        "type": "bool"
+      },
+      {
+        "name": "node_id",
+        "type": "int"
+      }
+    ],
+    "Mission": [
+      {
+        "name": "mission_id",
+        "type": "Union[int, str]"
+      },
+      {
+        "name": "targets",
+        "type": "List[MissionTarget]"
+      },
+      {
+        "name": "waypoints",
+        "type": "List[Tuple[float, float]]"
+      },
+      {
+        "name": "hazards",
+        "type": "List[HazardHint]"
+      },
+      {
+        "name": "policy",
+        "type": "BlockagePolicy"
+      },
+      {
+        "name": "search_types",
+        "type": "List[str]"
+      },
+      {
+        "name": "memory_ref",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "version_ref",
+        "type": "int"
+      },
+      {
+        "name": "issued_tick",
+        "type": "int"
+      },
+      {
+        "name": "reason",
+        "type": "str"
+      }
+    ],
+    "MissionTarget": [
+      {
+        "name": "beacon_id",
+        "type": "int"
+      },
+      {
+        "name": "event_type",
+        "type": "str"
+      },
+      {
+        "name": "x_local",
+        "type": "float"
+      },
+      {
+        "name": "y_local",
+        "type": "float"
+      },
+      {
+        "name": "severity",
+        "type": "int"
+      },
+      {
+        "name": "state",
+        "type": "str"
+      },
+      {
+        "name": "memory_id",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "version",
+        "type": "int"
+      },
+      {
+        "name": "host_beacon_id",
+        "type": "Optional[int]"
+      }
+    ],
+    "HazardHint": [
+      {
+        "name": "x_local",
+        "type": "float"
+      },
+      {
+        "name": "y_local",
+        "type": "float"
+      },
+      {
+        "name": "passage_state",
+        "type": "str"
+      },
+      {
+        "name": "memory_id",
+        "type": "int"
+      },
+      {
+        "name": "confidence",
+        "type": "int"
+      },
+      {
+        "name": "version",
+        "type": "int"
+      },
+      {
+        "name": "host_beacon_id",
+        "type": "Optional[int]"
+      },
+      {
+        "name": "severity",
+        "type": "int"
+      }
+    ],
+    "BlockagePolicy": [
+      {
+        "name": "max_wait_ticks",
+        "type": "int"
+      },
+      {
+        "name": "max_retries",
+        "type": "int"
+      },
+      {
+        "name": "request_debris_executor",
+        "type": "bool"
+      },
+      {
+        "name": "return_if_unreachable",
+        "type": "bool"
+      }
+    ]
+  },
+  "probes": {
+    "repeated_merged_report": {
+      "stored_records": 1,
+      "canonical_id": 257,
+      "lookup_alternate_id": false,
+      "corroborations_after_same_report_three_times": 3
+    },
+    "merged_alias_clearance": {
+      "canonical_state": "UNVERIFIED",
+      "alternate_id_stored": false,
+      "record_count": 1
+    },
+    "host_migration": {
+      "memory_id": 257,
+      "legacy_beacon_id": 1,
+      "current_host_beacon_id": 2
+    },
+    "lower_confidence_update": {
+      "initial_confidence": 90,
+      "current_observed_confidence": 10
+    },
+    "beacon_capacity": {
+      "first_write": true,
+      "new_write_when_all_open": false,
+      "new_write_after_closed_record": true,
+      "remaining_memory_ids": [
+        258
+      ]
+    },
+    "version_wrap": {
+      "attempted_version": 256,
+      "wire_version": 0,
+      "accepted_against_version_255": false
+    },
+    "memory_id_wrap": {
+      "counter_1": 257,
+      "counter_257": 257,
+      "same_id": true
+    },
+    "failed_mission_queue": {
+      "queue_length": 2,
+      "unique_object_count": 1,
+      "mission_ids": [
+        "M001",
+        "M001"
+      ]
+    },
+    "brief_serialization": {
+      "exported_keys": [
+        "hazards",
+        "mission_id",
+        "reason",
+        "search_types",
+        "targets",
+        "waypoints"
+      ],
+      "omitted_dataclass_fields": [
+        "issued_tick",
+        "memory_ref",
+        "policy",
+        "version_ref"
+      ]
+    },
+    "mailbox_replace_and_consume": {
+      "polled_mission": "M002",
+      "second_poll_is_none": true
+    },
+    "late_previous_mission_outcome": {
+      "old_memory_id": 257,
+      "current_mission_memory_id": 258,
+      "current_mission_state_after_old_report": "COMPLETED",
+      "stale_state_reports_dropped": 1
+    }
+  },
+  "runtime": {
+    "scenario": "global-seed42",
+    "command_post_records": [
+      {
+        "memory_id": 257,
+        "host_beacon_id": 1,
+        "version": 2,
+        "source": "E7",
+        "passage_state": null,
+        "mission_relevance": 0.449,
+        "last_update_ts": 1790000317,
+        "hop_count": 0,
+        "beacon_id": 1,
+        "event_type": "GAS",
+        "x_local": 0.5,
+        "y_local": -2.0,
+        "severity": 2,
+        "state": "ACTIVE",
+        "verified_by": "E7",
+        "live_confidence_pct": 90,
+        "is_stale": false,
+        "age_s": 27.8,
+        "gps_lat": 36.806482,
+        "gps_lon": 10.1815056,
+        "history": [
+          "tick=1342 v1 UNVERIFIED (first received, from W1 via beacon #1)",
+          "tick=3173 v2 UNVERIFIED->ACTIVE by E7"
+        ]
+      },
+      {
+        "memory_id": 258,
+        "host_beacon_id": 2,
+        "version": 2,
+        "source": "E1",
+        "passage_state": null,
+        "mission_relevance": 0.0,
+        "last_update_ts": 1790000325,
+        "hop_count": 1,
+        "beacon_id": 2,
+        "event_type": "FIRE",
+        "x_local": 2.0,
+        "y_local": -3.0,
+        "severity": 3,
+        "state": "CLEARED",
+        "verified_by": "E1",
+        "live_confidence_pct": 91,
+        "is_stale": false,
+        "age_s": 19.8,
+        "gps_lat": 36.806473,
+        "gps_lon": 10.1815225,
+        "history": [
+          "tick=1443 v1 UNVERIFIED (first received, from W1 via beacon #2)",
+          "tick=3259 v2 UNVERIFIED->CLEARED by E1"
+        ]
+      }
+    ],
+    "beacon_records": [
+      {
+        "host": 1,
+        "memory_id": 257,
+        "version": 2,
+        "state": "ACTIVE",
+        "source_node": 134
+      },
+      {
+        "host": 2,
+        "memory_id": 258,
+        "version": 2,
+        "state": "CLEARED",
+        "source_node": 128
+      }
+    ],
+    "mission_records": [
+      {
+        "mission_id": "M001",
+        "beacon_id": 257,
+        "event_type": "GAS",
+        "priority_score": 14.75,
+        "x_local": 0.5,
+        "y_local": -2.0,
+        "severity": 2,
+        "required_capability": "GAS",
+        "arrival_tick": 1342,
+        "status": "COMPLETED",
+        "assigned_executor_id": "E07",
+        "dispatched_tick": 3041,
+        "completed_tick": 3173
+      },
+      {
+        "mission_id": "M002",
+        "beacon_id": 258,
+        "event_type": "FIRE",
+        "priority_score": 17.8,
+        "x_local": 2.0,
+        "y_local": -3.0,
+        "severity": 3,
+        "required_capability": "FIRE",
+        "arrival_tick": 1443,
+        "status": "COMPLETED",
+        "assigned_executor_id": "E01",
+        "dispatched_tick": 3041,
+        "completed_tick": 3259
+      }
+    ],
+    "fresh_system_record_count": 0,
+    "fresh_system_beacon_count": 0
+  }
+}

@@ -1,0 +1,2283 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "scenario": "normal",
+      "seed": 42,
+      "passed": true,
+      "error": null,
+      "explanation": {
+        "status": "success",
+        "title": "Success: every check passed",
+        "what": "The fire is resolved and the response robots are ready at the entrance.",
+        "why": "The gas remains a hazard; finishing the checks does not make the tunnel safe.",
+        "next": "Inspect the saved findings or press R to run again."
+      },
+      "error_detail": null,
+      "checks": {
+        "all_milestones": true,
+        "final_memory_states": true,
+        "missions_completed_and_home": true,
+        "writer_end": true,
+        "ona_path": true,
+        "queue_unique": true,
+        "beacon_updates_agree": true
+      },
+      "tick": 3469,
+      "checkpoints": [
+        {
+          "tick": 0,
+          "name": "1. Explore and save findings"
+        },
+        {
+          "tick": 1341,
+          "name": "2. Pass findings to the outside team"
+        },
+        {
+          "tick": 3040,
+          "name": "3. Send the response robots"
+        },
+        {
+          "tick": 3041,
+          "name": "4. Check the hazards"
+        },
+        {
+          "tick": 3260,
+          "name": "5. Receive results and return home"
+        },
+        {
+          "tick": 3469,
+          "name": "Success: every check passed"
+        }
+      ],
+      "records": [
+        {
+          "memory_id": 257,
+          "host_beacon_id": 1,
+          "version": 2,
+          "source": "E2",
+          "passage_state": null,
+          "mission_relevance": 0.447,
+          "last_update_ts": 1790000317,
+          "hop_count": 0,
+          "beacon_id": 1,
+          "event_type": "GAS",
+          "x_local": 0.5,
+          "y_local": -2.0,
+          "severity": 2,
+          "state": "ACTIVE",
+          "verified_by": "E2",
+          "live_confidence_pct": 89,
+          "is_stale": false,
+          "age_s": 29.9,
+          "gps_lat": 36.806482,
+          "gps_lon": 10.1815056,
+          "history": [
+            "tick=1342 report #0101 v1 UNVERIFIED (first received, from W1 via beacon #1)",
+            "tick=3173 report #0101 v2, revision 2 UNVERIFIED->ACTIVE by E2"
+          ],
+          "aliases": [],
+          "timestamp": 1790000134,
+          "corroborations": 0,
+          "battery_pct": 100,
+          "initial_confidence": 71,
+          "observed_confidence": 95,
+          "source_node": 129,
+          "received_tick": 3173
+        },
+        {
+          "memory_id": 258,
+          "host_beacon_id": 2,
+          "version": 2,
+          "source": "E1",
+          "passage_state": null,
+          "mission_relevance": 0.0,
+          "last_update_ts": 1790000325,
+          "hop_count": 1,
+          "beacon_id": 2,
+          "event_type": "FIRE",
+          "x_local": 2.0,
+          "y_local": -3.0,
+          "severity": 3,
+          "state": "CLEARED",
+          "verified_by": "E1",
+          "live_confidence_pct": 91,
+          "is_stale": false,
+          "age_s": 21.9,
+          "gps_lat": 36.806473,
+          "gps_lon": 10.1815225,
+          "history": [
+            "tick=1443 report #0102 v1 UNVERIFIED (first received, from W1 via beacon #2)",
+            "tick=3259 report #0102 v2, revision 2 UNVERIFIED->CLEARED by E1"
+          ],
+          "aliases": [],
+          "timestamp": 1790000144,
+          "corroborations": 0,
+          "battery_pct": 100,
+          "initial_confidence": 77,
+          "observed_confidence": 95,
+          "source_node": 128,
+          "received_tick": 3259
+        }
+      ],
+      "decisions": [
+        {
+          "tick": 3041,
+          "mission_id": "M002",
+          "attempt_id": 1,
+          "memory_id": 258,
+          "event_type": "FIRE",
+          "state": "UNVERIFIED",
+          "executor": "E01",
+          "priority": 16.07,
+          "components": {
+            "base": 18.05,
+            "class_weight": 1.2,
+            "status_factor": 0.8,
+            "travel_penalty": 1.26,
+            "distance_m": 3.61,
+            "blocker_boost": 0.0,
+            "age_s": 160.1,
+            "live_confidence": 0.56
+          },
+          "selection": {
+            "required": "FIRE",
+            "chosen": "E01",
+            "match": "specialist FIRE",
+            "battery_pct": 100,
+            "missions_done": 0,
+            "alternatives": [],
+            "rejected": [
+              "E02: lacks FIRE capability"
+            ],
+            "not_available": [],
+            "why": "specialist FIRE; battery 100%; 0 mission(s) done"
+          }
+        },
+        {
+          "tick": 3041,
+          "mission_id": "M001",
+          "attempt_id": 2,
+          "memory_id": 257,
+          "event_type": "GAS",
+          "state": "UNVERIFIED",
+          "executor": "E02",
+          "priority": 9.36,
+          "components": {
+            "base": 12.6,
+            "class_weight": 1.0,
+            "status_factor": 0.8,
+            "travel_penalty": 0.72,
+            "distance_m": 2.06,
+            "blocker_boost": 0.0,
+            "age_s": 170.1,
+            "live_confidence": 0.51
+          },
+          "selection": {
+            "required": "GAS",
+            "chosen": "E02",
+            "match": "specialist GAS",
+            "battery_pct": 100,
+            "missions_done": 0,
+            "alternatives": [],
+            "rejected": [],
+            "not_available": [
+              "E01: AVAILABLE"
+            ],
+            "why": "specialist GAS; battery 100%; 0 mission(s) done"
+          }
+        }
+      ],
+      "network": {
+        "beacons": 2,
+        "beacons_connected_to_ona": 2,
+        "max_hops": 2,
+        "frames_transmitted": 892,
+        "frames_delivered": 2687,
+        "frames_lost_random": 0,
+        "forwarded_by_beacons": 63,
+        "retries": 0,
+        "duplicates_suppressed": 0,
+        "ona_memory_frames": 16,
+        "ona_heartbeats": 75,
+        "ona_crc_rejected": 0
+      },
+      "writer_state": "RETURNED",
+      "writer_decisions": [
+        {
+          "tick": 1340,
+          "event": "GAS",
+          "decision": "EVENT_NEW",
+          "reason": "importance 1.42; no hosting beacon within 2.0 cells; uplink OK",
+          "severity": 2,
+          "confidence": 71,
+          "stock": 16,
+          "uplink_margin": 0.625,
+          "memory_id": 257,
+          "host_beacon_id": 1
+        },
+        {
+          "tick": 1360,
+          "event": "GAS",
+          "decision": "SKIP",
+          "reason": "redundant \u2014 same event type within 2 cells"
+        },
+        {
+          "tick": 1440,
+          "event": "FIRE",
+          "decision": "EVENT_NEW",
+          "reason": "importance 2.31; no hosting beacon within 2.0 cells; uplink OK",
+          "severity": 3,
+          "confidence": 77,
+          "stock": 15,
+          "uplink_margin": 0.2993060905670013,
+          "memory_id": 258,
+          "host_beacon_id": 2
+        },
+        {
+          "tick": 1600,
+          "event": "FIRE",
+          "decision": "SKIP",
+          "reason": "redundant \u2014 same event type within 2 cells"
+        }
+      ],
+      "executor_events": {
+        "E01": [
+          {
+            "tick": 3040,
+            "kind": "mission_loaded",
+            "mission": "M002",
+            "attempt_id": 1,
+            "targets": 1,
+            "hazards": 0,
+            "waypoints": 2,
+            "why": "FIRE #0102 state=UNVERIFIED conf=56% age=160s"
+          },
+          {
+            "tick": 3192,
+            "kind": "on_site",
+            "cell": [
+              7,
+              5
+            ]
+          },
+          {
+            "tick": 3200,
+            "kind": "work_start",
+            "task": "suppress fire"
+          },
+          {
+            "tick": 3250,
+            "kind": "work_done",
+            "task": "suppress fire",
+            "effect": "FIRE_EXTINGUISHED"
+          },
+          {
+            "tick": 3256,
+            "kind": "verified",
+            "target": "FIRE",
+            "result": "CLEARED"
+          },
+          {
+            "tick": 3257,
+            "kind": "memory_write",
+            "memory": "#0102",
+            "type": "FIRE",
+            "state": "CLEARED",
+            "version": 2,
+            "beacon": 2,
+            "new_beacon": false,
+            "why": "FIRE cleared (executor observation)"
+          },
+          {
+            "tick": 3257,
+            "kind": "returning",
+            "why": "mission complete"
+          },
+          {
+            "tick": 3408,
+            "kind": "home",
+            "state": "AVAILABLE",
+            "battery": 100
+          }
+        ],
+        "E02": [
+          {
+            "tick": 3040,
+            "kind": "mission_loaded",
+            "mission": "M001",
+            "attempt_id": 2,
+            "targets": 1,
+            "hazards": 0,
+            "waypoints": 1,
+            "why": "GAS #0101 state=UNVERIFIED conf=51% age=170s"
+          },
+          {
+            "tick": 3117,
+            "kind": "on_site",
+            "cell": [
+              5,
+              2
+            ]
+          },
+          {
+            "tick": 3125,
+            "kind": "work_start",
+            "task": "ventilate / seal"
+          },
+          {
+            "tick": 3165,
+            "kind": "work_done",
+            "task": "ventilate / seal",
+            "effect": "GAS_VENTED"
+          },
+          {
+            "tick": 3171,
+            "kind": "verified",
+            "target": "GAS",
+            "result": "ACTIVE"
+          },
+          {
+            "tick": 3172,
+            "kind": "memory_write",
+            "memory": "#0101",
+            "type": "GAS",
+            "state": "ACTIVE",
+            "version": 2,
+            "beacon": 1,
+            "new_beacon": false,
+            "why": "GAS active (executor observation)"
+          },
+          {
+            "tick": 3172,
+            "kind": "returning",
+            "why": "mission complete"
+          },
+          {
+            "tick": 3248,
+            "kind": "home",
+            "state": "AVAILABLE",
+            "battery": 100
+          }
+        ]
+      },
+      "packets": [
+        {
+          "tick": 1343,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 3,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 03 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 06 3c b1 6a 02 47 60 81 01 01 01 00 ff 06 3c b1 6a 41 60",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 1343,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 4,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 04 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 06 3c b1 6a 02 47 60 81 01 01 01 00 ff 06 3c b1 6a 41 4a",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 1444,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 3,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 03 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 10 3c b1 6a 03 4d 5c 0b 02 01 01 00 ff 10 3c b1 6a 41 75",
+          "memory_id": 258,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 2
+        },
+        {
+          "tick": 1444,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 4,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 04 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 10 3c b1 6a 03 4d 5c 0b 02 01 01 00 ff 10 3c b1 6a 41 5f",
+          "memory_id": 258,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 2
+        },
+        {
+          "tick": 1743,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 22,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 16 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 06 3c b1 6a 02 47 60 81 01 01 01 00 ff 06 3c b1 6a 41 b6",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 1844,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 22,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 16 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 10 3c b1 6a 03 4d 5c 0b 02 01 01 00 ff 10 3c b1 6a 41 a3",
+          "memory_id": 258,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 2
+        },
+        {
+          "tick": 2143,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 29,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 1d 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 06 3c b1 6a 02 47 60 81 01 01 01 00 ff 06 3c b1 6a 41 d4",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 2244,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 30,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 1e 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 10 3c b1 6a 03 4d 5c 0b 02 01 01 00 ff 10 3c b1 6a 41 d3",
+          "memory_id": 258,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 2
+        },
+        {
+          "tick": 2543,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 39,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 27 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 06 3c b1 6a 02 47 60 81 01 01 01 00 ff 06 3c b1 6a 41 a9",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 2644,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 41,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 29 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 10 3c b1 6a 03 4d 5c 0b 02 01 01 00 ff 10 3c b1 6a 41 e8",
+          "memory_id": 258,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 2
+        },
+        {
+          "tick": 2943,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 52,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 34 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 06 3c b1 6a 02 47 60 81 01 01 01 00 ff 06 3c b1 6a 41 5b",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 3044,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 48,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 30 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 10 3c b1 6a 03 4d 5c 0b 02 01 01 00 ff 10 3c b1 6a 41 76",
+          "memory_id": 258,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 2
+        },
+        {
+          "tick": 3174,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 56,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 38 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 bd 3c b1 6a 02 5f 64 d5 01 01 02 03 ff bd 3c b1 6a 81 c8",
+          "memory_id": 257,
+          "version": 2,
+          "state": "ACTIVE",
+          "host": 1
+        },
+        {
+          "tick": 3260,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 53,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 35 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 c5 3c b1 6a 03 5f 64 b3 02 01 02 05 ff c5 3c b1 6a 80 31",
+          "memory_id": 258,
+          "version": 2,
+          "state": "CLEARED",
+          "host": 2
+        },
+        {
+          "tick": 3343,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 61,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 3d 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 bd 3c b1 6a 02 5f 64 d5 01 01 02 03 ff bd 3c b1 6a 81 fe",
+          "memory_id": 257,
+          "version": 2,
+          "state": "ACTIVE",
+          "host": 1
+        },
+        {
+          "tick": 3444,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 58,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 3a 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 c5 3c b1 6a 03 5f 64 b3 02 01 02 05 ff c5 3c b1 6a 80 6b",
+          "memory_id": 258,
+          "version": 2,
+          "state": "CLEARED",
+          "host": 2
+        }
+      ],
+      "wall_seconds": 0.201
+    },
+    {
+      "scenario": "writer-failure",
+      "seed": 42,
+      "passed": true,
+      "error": null,
+      "explanation": {
+        "status": "success",
+        "title": "Success: every check passed",
+        "what": "The fire is resolved and the response robots are ready at the entrance.",
+        "why": "The gas remains a hazard; finishing the checks does not make the tunnel safe.",
+        "next": "Inspect the saved findings or press R to run again."
+      },
+      "error_detail": null,
+      "checks": {
+        "all_milestones": true,
+        "final_memory_states": true,
+        "missions_completed_and_home": true,
+        "writer_end": true,
+        "ona_path": true,
+        "queue_unique": true,
+        "beacon_updates_agree": true
+      },
+      "tick": 2329,
+      "checkpoints": [
+        {
+          "tick": 0,
+          "name": "1. Explore and save findings"
+        },
+        {
+          "tick": 1341,
+          "name": "2. Pass findings to the outside team"
+        },
+        {
+          "tick": 1900,
+          "name": "3. Send the response robots"
+        },
+        {
+          "tick": 1901,
+          "name": "4. Check the hazards"
+        },
+        {
+          "tick": 2120,
+          "name": "5. Receive results and return home"
+        },
+        {
+          "tick": 2329,
+          "name": "Success: every check passed"
+        }
+      ],
+      "records": [
+        {
+          "memory_id": 257,
+          "host_beacon_id": 1,
+          "version": 2,
+          "source": "E2",
+          "passage_state": null,
+          "mission_relevance": 0.447,
+          "last_update_ts": 1790000203,
+          "hop_count": 0,
+          "beacon_id": 1,
+          "event_type": "GAS",
+          "x_local": 0.5,
+          "y_local": -2.0,
+          "severity": 2,
+          "state": "ACTIVE",
+          "verified_by": "E2",
+          "live_confidence_pct": 89,
+          "is_stale": false,
+          "age_s": 29.9,
+          "gps_lat": 36.806482,
+          "gps_lon": 10.1815056,
+          "history": [
+            "tick=1342 report #0101 v1 UNVERIFIED (first received, from W1 via beacon #1)",
+            "tick=2033 report #0101 v2, revision 2 UNVERIFIED->ACTIVE by E2"
+          ],
+          "aliases": [],
+          "timestamp": 1790000134,
+          "corroborations": 0,
+          "battery_pct": 100,
+          "initial_confidence": 71,
+          "observed_confidence": 95,
+          "source_node": 129,
+          "received_tick": 2033
+        },
+        {
+          "memory_id": 258,
+          "host_beacon_id": 2,
+          "version": 2,
+          "source": "E1",
+          "passage_state": null,
+          "mission_relevance": 0.0,
+          "last_update_ts": 1790000211,
+          "hop_count": 1,
+          "beacon_id": 2,
+          "event_type": "FIRE",
+          "x_local": 2.0,
+          "y_local": -3.0,
+          "severity": 3,
+          "state": "CLEARED",
+          "verified_by": "E1",
+          "live_confidence_pct": 91,
+          "is_stale": false,
+          "age_s": 21.9,
+          "gps_lat": 36.806473,
+          "gps_lon": 10.1815225,
+          "history": [
+            "tick=1443 report #0102 v1 UNVERIFIED (first received, from W1 via beacon #2)",
+            "tick=2119 report #0102 v2, revision 2 UNVERIFIED->CLEARED by E1"
+          ],
+          "aliases": [],
+          "timestamp": 1790000144,
+          "corroborations": 0,
+          "battery_pct": 100,
+          "initial_confidence": 77,
+          "observed_confidence": 95,
+          "source_node": 128,
+          "received_tick": 2119
+        }
+      ],
+      "decisions": [
+        {
+          "tick": 1901,
+          "mission_id": "M002",
+          "attempt_id": 3,
+          "memory_id": 258,
+          "event_type": "FIRE",
+          "state": "UNVERIFIED",
+          "executor": "E01",
+          "priority": 16.55,
+          "components": {
+            "base": 18.55,
+            "class_weight": 1.2,
+            "status_factor": 0.8,
+            "travel_penalty": 1.26,
+            "distance_m": 3.61,
+            "blocker_boost": 0.0,
+            "age_s": 46.1,
+            "live_confidence": 0.7
+          },
+          "selection": {
+            "required": "FIRE",
+            "chosen": "E01",
+            "match": "specialist FIRE",
+            "battery_pct": 100,
+            "missions_done": 0,
+            "alternatives": [],
+            "rejected": [
+              "E02: lacks FIRE capability"
+            ],
+            "not_available": [],
+            "why": "specialist FIRE; battery 100%; 0 mission(s) done"
+          }
+        },
+        {
+          "tick": 1901,
+          "mission_id": "M001",
+          "attempt_id": 4,
+          "memory_id": 257,
+          "event_type": "GAS",
+          "state": "UNVERIFIED",
+          "executor": "E02",
+          "priority": 9.92,
+          "components": {
+            "base": 13.3,
+            "class_weight": 1.0,
+            "status_factor": 0.8,
+            "travel_penalty": 0.72,
+            "distance_m": 2.06,
+            "blocker_boost": 0.0,
+            "age_s": 56.1,
+            "live_confidence": 0.63
+          },
+          "selection": {
+            "required": "GAS",
+            "chosen": "E02",
+            "match": "specialist GAS",
+            "battery_pct": 100,
+            "missions_done": 0,
+            "alternatives": [],
+            "rejected": [],
+            "not_available": [
+              "E01: AVAILABLE"
+            ],
+            "why": "specialist GAS; battery 100%; 0 mission(s) done"
+          }
+        }
+      ],
+      "network": {
+        "beacons": 2,
+        "beacons_connected_to_ona": 2,
+        "max_hops": 2,
+        "frames_transmitted": 555,
+        "frames_delivered": 1485,
+        "frames_lost_random": 0,
+        "forwarded_by_beacons": 41,
+        "retries": 0,
+        "duplicates_suppressed": 0,
+        "ona_memory_frames": 10,
+        "ona_heartbeats": 37,
+        "ona_crc_rejected": 0
+      },
+      "writer_state": "DEAD",
+      "writer_decisions": [
+        {
+          "tick": 1340,
+          "event": "GAS",
+          "decision": "EVENT_NEW",
+          "reason": "importance 1.42; no hosting beacon within 2.0 cells; uplink OK",
+          "severity": 2,
+          "confidence": 71,
+          "stock": 16,
+          "uplink_margin": 0.625,
+          "memory_id": 257,
+          "host_beacon_id": 1
+        },
+        {
+          "tick": 1360,
+          "event": "GAS",
+          "decision": "SKIP",
+          "reason": "redundant \u2014 same event type within 2 cells"
+        },
+        {
+          "tick": 1440,
+          "event": "FIRE",
+          "decision": "EVENT_NEW",
+          "reason": "importance 2.31; no hosting beacon within 2.0 cells; uplink OK",
+          "severity": 3,
+          "confidence": 77,
+          "stock": 15,
+          "uplink_margin": 0.2993060905670013,
+          "memory_id": 258,
+          "host_beacon_id": 2
+        }
+      ],
+      "executor_events": {
+        "E01": [
+          {
+            "tick": 1900,
+            "kind": "mission_loaded",
+            "mission": "M002",
+            "attempt_id": 3,
+            "targets": 1,
+            "hazards": 0,
+            "waypoints": 2,
+            "why": "FIRE #0102 state=UNVERIFIED conf=70% age=46s"
+          },
+          {
+            "tick": 2052,
+            "kind": "on_site",
+            "cell": [
+              7,
+              5
+            ]
+          },
+          {
+            "tick": 2060,
+            "kind": "work_start",
+            "task": "suppress fire"
+          },
+          {
+            "tick": 2110,
+            "kind": "work_done",
+            "task": "suppress fire",
+            "effect": "FIRE_EXTINGUISHED"
+          },
+          {
+            "tick": 2116,
+            "kind": "verified",
+            "target": "FIRE",
+            "result": "CLEARED"
+          },
+          {
+            "tick": 2117,
+            "kind": "memory_write",
+            "memory": "#0102",
+            "type": "FIRE",
+            "state": "CLEARED",
+            "version": 2,
+            "beacon": 2,
+            "new_beacon": false,
+            "why": "FIRE cleared (executor observation)"
+          },
+          {
+            "tick": 2117,
+            "kind": "returning",
+            "why": "mission complete"
+          },
+          {
+            "tick": 2268,
+            "kind": "home",
+            "state": "AVAILABLE",
+            "battery": 100
+          }
+        ],
+        "E02": [
+          {
+            "tick": 1900,
+            "kind": "mission_loaded",
+            "mission": "M001",
+            "attempt_id": 4,
+            "targets": 1,
+            "hazards": 0,
+            "waypoints": 1,
+            "why": "GAS #0101 state=UNVERIFIED conf=63% age=56s"
+          },
+          {
+            "tick": 1977,
+            "kind": "on_site",
+            "cell": [
+              5,
+              2
+            ]
+          },
+          {
+            "tick": 1985,
+            "kind": "work_start",
+            "task": "ventilate / seal"
+          },
+          {
+            "tick": 2025,
+            "kind": "work_done",
+            "task": "ventilate / seal",
+            "effect": "GAS_VENTED"
+          },
+          {
+            "tick": 2031,
+            "kind": "verified",
+            "target": "GAS",
+            "result": "ACTIVE"
+          },
+          {
+            "tick": 2032,
+            "kind": "memory_write",
+            "memory": "#0101",
+            "type": "GAS",
+            "state": "ACTIVE",
+            "version": 2,
+            "beacon": 1,
+            "new_beacon": false,
+            "why": "GAS active (executor observation)"
+          },
+          {
+            "tick": 2032,
+            "kind": "returning",
+            "why": "mission complete"
+          },
+          {
+            "tick": 2108,
+            "kind": "home",
+            "state": "AVAILABLE",
+            "battery": 100
+          }
+        ]
+      },
+      "packets": [
+        {
+          "tick": 1343,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 3,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 03 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 06 3c b1 6a 02 47 60 81 01 01 01 00 ff 06 3c b1 6a 41 60",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 1343,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 4,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 04 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 06 3c b1 6a 02 47 60 81 01 01 01 00 ff 06 3c b1 6a 41 4a",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 1444,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 3,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 03 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 10 3c b1 6a 03 4d 5c 0b 02 01 01 00 ff 10 3c b1 6a 41 75",
+          "memory_id": 258,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 2
+        },
+        {
+          "tick": 1444,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 4,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 04 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 10 3c b1 6a 03 4d 5c 0b 02 01 01 00 ff 10 3c b1 6a 41 5f",
+          "memory_id": 258,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 2
+        },
+        {
+          "tick": 1743,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 19,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 13 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 06 3c b1 6a 02 47 60 81 01 01 01 00 ff 06 3c b1 6a 41 80",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 1844,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 13,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 0d 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 10 3c b1 6a 03 4d 5c 0b 02 01 01 00 ff 10 3c b1 6a 41 21",
+          "memory_id": 258,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 2
+        },
+        {
+          "tick": 2034,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 24,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 18 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 4b 3c b1 6a 02 5f 64 83 01 01 02 03 ff 4b 3c b1 6a 81 47",
+          "memory_id": 257,
+          "version": 2,
+          "state": "ACTIVE",
+          "host": 1
+        },
+        {
+          "tick": 2120,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 19,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 13 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 53 3c b1 6a 03 5f 64 94 02 01 02 05 ff 53 3c b1 6a 80 a3",
+          "memory_id": 258,
+          "version": 2,
+          "state": "CLEARED",
+          "host": 2
+        },
+        {
+          "tick": 2143,
+          "src": 1,
+          "dst": 0,
+          "origin": 1,
+          "seq": 28,
+          "hops": 0,
+          "bytes": 39,
+          "hex": "01 01 1c 00 0c 00 01 00 01 1c 01 03 00 00 00 3f 00 00 00 c0 4b 3c b1 6a 02 5f 64 83 01 01 02 03 ff 4b 3c b1 6a 81 7f",
+          "memory_id": 257,
+          "version": 2,
+          "state": "ACTIVE",
+          "host": 1
+        },
+        {
+          "tick": 2244,
+          "src": 1,
+          "dst": 0,
+          "origin": 2,
+          "seq": 23,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 02 17 00 0b 01 01 00 01 1c 02 02 00 00 00 40 00 00 40 c0 53 3c b1 6a 03 5f 64 94 02 01 02 05 ff 53 3c b1 6a 80 9b",
+          "memory_id": 258,
+          "version": 2,
+          "state": "CLEARED",
+          "host": 2
+        }
+      ],
+      "wall_seconds": 0.132
+    },
+    {
+      "scenario": "debris-recovery",
+      "seed": 42,
+      "passed": true,
+      "error": null,
+      "explanation": {
+        "status": "success",
+        "title": "Success: every check passed",
+        "what": "The fire is resolved and the response robots are ready at the entrance.",
+        "why": "The cleared route allowed the original fire job to finish.",
+        "next": "Inspect the saved findings or press R to run again."
+      },
+      "error_detail": null,
+      "checks": {
+        "all_milestones": true,
+        "final_memory_states": true,
+        "missions_completed_and_home": true,
+        "writer_end": true,
+        "ona_path": true,
+        "queue_unique": true,
+        "two_distinct_fire_attempts": true,
+        "debris_executor_used": true,
+        "clearance_received": true,
+        "beacon_updates_agree": true
+      },
+      "tick": 5249,
+      "checkpoints": [
+        {
+          "tick": 0,
+          "name": "1. Explore and save findings"
+        },
+        {
+          "tick": 161,
+          "name": "2. Pass findings to the outside team"
+        },
+        {
+          "tick": 3612,
+          "name": "3. Add a blocked route and send robots"
+        },
+        {
+          "tick": 3613,
+          "name": "4. Discover the blocked route"
+        },
+        {
+          "tick": 4262,
+          "name": "5. Remove the rubble"
+        },
+        {
+          "tick": 4581,
+          "name": "6. Retry the fire job"
+        },
+        {
+          "tick": 4920,
+          "name": "7. Receive results and return home"
+        },
+        {
+          "tick": 5249,
+          "name": "Success: every check passed"
+        }
+      ],
+      "records": [
+        {
+          "memory_id": 257,
+          "host_beacon_id": 1,
+          "version": 2,
+          "source": "E2",
+          "passage_state": null,
+          "mission_relevance": 0.0,
+          "last_update_ts": 1790000491,
+          "hop_count": 1,
+          "beacon_id": 1,
+          "event_type": "FIRE",
+          "x_local": 2.0,
+          "y_local": -3.0,
+          "severity": 3,
+          "state": "CLEARED",
+          "verified_by": "E2",
+          "live_confidence_pct": 89,
+          "is_stale": false,
+          "age_s": 33.9,
+          "gps_lat": 36.806473,
+          "gps_lon": 10.1815225,
+          "history": [
+            "tick=243 report #0101 v1 UNVERIFIED (first received, from W1 via beacon #1)",
+            "tick=4919 report #0101 v2, revision 2 UNVERIFIED->CLEARED by E2"
+          ],
+          "aliases": [],
+          "timestamp": 1790000016,
+          "corroborations": 0,
+          "battery_pct": 100,
+          "initial_confidence": 77,
+          "observed_confidence": 95,
+          "source_node": 129,
+          "received_tick": 4919
+        },
+        {
+          "memory_id": 4097,
+          "host_beacon_id": 1,
+          "version": 3,
+          "source": "E2",
+          "passage_state": "BLOCKED",
+          "mission_relevance": 0.382,
+          "last_update_ts": 1790000468,
+          "hop_count": 1,
+          "beacon_id": 1,
+          "event_type": "BLOCKAGE",
+          "x_local": 1.5,
+          "y_local": -3.0,
+          "severity": 2,
+          "state": "VERIFIED",
+          "verified_by": "E2",
+          "live_confidence_pct": 85,
+          "is_stale": false,
+          "age_s": 56.9,
+          "gps_lat": 36.806473,
+          "gps_lon": 10.1815169,
+          "history": [
+            "tick=3720 report #1001 v1 VERIFIED (first received, from E1 via beacon #1)",
+            "tick=4369 report #1001 v2, revision 2 VERIFIED->VERIFIED by E3",
+            "tick=4688 report #1001 v3, revision 3 VERIFIED->VERIFIED by E2"
+          ],
+          "aliases": [],
+          "timestamp": 1790000371,
+          "corroborations": 0,
+          "battery_pct": 100,
+          "initial_confidence": 95,
+          "observed_confidence": 95,
+          "source_node": 129,
+          "received_tick": 4688
+        },
+        {
+          "memory_id": 4098,
+          "host_beacon_id": 1,
+          "version": 3,
+          "source": "E3",
+          "passage_state": "OPEN",
+          "mission_relevance": 0.0,
+          "last_update_ts": 1790000457,
+          "hop_count": 1,
+          "beacon_id": 1,
+          "event_type": "BLOCKAGE",
+          "x_local": 2.0,
+          "y_local": -3.5,
+          "severity": 2,
+          "state": "CLEARED",
+          "verified_by": "E3",
+          "live_confidence_pct": 83,
+          "is_stale": false,
+          "age_s": 67.9,
+          "gps_lat": 36.8064685,
+          "gps_lon": 10.1815225,
+          "history": [
+            "tick=3840 report #1002 v1 VERIFIED (first received, from E1 via beacon #1)",
+            "tick=4489 report #1002 v2, revision 2 VERIFIED->VERIFIED by E3",
+            "tick=4580 report #1002 v3, revision 3 VERIFIED->CLEARED by E3"
+          ],
+          "aliases": [],
+          "timestamp": 1790000383,
+          "corroborations": 0,
+          "battery_pct": 100,
+          "initial_confidence": 95,
+          "observed_confidence": 95,
+          "source_node": 130,
+          "received_tick": 4580
+        }
+      ],
+      "decisions": [
+        {
+          "tick": 3613,
+          "mission_id": "M001",
+          "attempt_id": 5,
+          "memory_id": 257,
+          "event_type": "FIRE",
+          "state": "UNVERIFIED",
+          "executor": "E01",
+          "priority": 15.01,
+          "components": {
+            "base": 16.95,
+            "class_weight": 1.2,
+            "status_factor": 0.8,
+            "travel_penalty": 1.26,
+            "distance_m": 3.61,
+            "blocker_boost": 0.0,
+            "age_s": 345.3,
+            "live_confidence": 0.39
+          },
+          "selection": {
+            "required": "FIRE",
+            "chosen": "E01",
+            "match": "specialist FIRE",
+            "battery_pct": 100,
+            "missions_done": 0,
+            "alternatives": [
+              "E02"
+            ],
+            "rejected": [
+              "E03: lacks FIRE capability"
+            ],
+            "not_available": [],
+            "why": "specialist FIRE; battery 100%; 0 mission(s) done"
+          }
+        },
+        {
+          "tick": 4262,
+          "mission_id": "M003",
+          "attempt_id": 6,
+          "memory_id": 4098,
+          "event_type": "BLOCKAGE",
+          "state": "VERIFIED",
+          "executor": "E03",
+          "priority": 26.35,
+          "components": {
+            "base": 15.8,
+            "class_weight": 0.8,
+            "status_factor": 1.0,
+            "travel_penalty": 1.41,
+            "distance_m": 4.03,
+            "blocker_boost": 15.12,
+            "age_s": 43.2,
+            "live_confidence": 0.87
+          },
+          "selection": {
+            "required": "DEBRIS",
+            "chosen": "E03",
+            "match": "specialist DEBRIS",
+            "battery_pct": 100,
+            "missions_done": 0,
+            "alternatives": [],
+            "rejected": [
+              "E02: lacks DEBRIS capability"
+            ],
+            "not_available": [
+              "E01: RETURNING"
+            ],
+            "why": "specialist DEBRIS; battery 100%; 0 mission(s) done"
+          }
+        },
+        {
+          "tick": 4581,
+          "mission_id": "M001",
+          "attempt_id": 7,
+          "memory_id": 257,
+          "event_type": "FIRE",
+          "state": "UNVERIFIED",
+          "executor": "E02",
+          "priority": 14.87,
+          "components": {
+            "base": 16.8,
+            "class_weight": 1.2,
+            "status_factor": 0.8,
+            "travel_penalty": 1.26,
+            "distance_m": 3.61,
+            "blocker_boost": 0.0,
+            "age_s": 442.1,
+            "live_confidence": 0.32
+          },
+          "selection": {
+            "required": "FIRE",
+            "chosen": "E02",
+            "match": "specialist FIRE",
+            "battery_pct": 100,
+            "missions_done": 0,
+            "alternatives": [],
+            "rejected": [],
+            "not_available": [
+              "E01: RETURNING",
+              "E03: RETURNING"
+            ],
+            "why": "specialist FIRE; battery 100%; 0 mission(s) done"
+          }
+        }
+      ],
+      "network": {
+        "beacons": 2,
+        "beacons_connected_to_ona": 2,
+        "max_hops": 2,
+        "frames_transmitted": 1587,
+        "frames_delivered": 6262,
+        "frames_lost_random": 0,
+        "forwarded_by_beacons": 151,
+        "retries": 0,
+        "duplicates_suppressed": 0,
+        "ona_memory_frames": 29,
+        "ona_heartbeats": 179,
+        "ona_crc_rejected": 0
+      },
+      "writer_state": "RETURNED",
+      "writer_decisions": [
+        {
+          "tick": 160,
+          "event": "FIRE",
+          "decision": "EVENT_NEW",
+          "reason": "importance 2.31; no hosting beacon within 2.0 cells; no uplink here (store-and-forward until bridged)",
+          "severity": 3,
+          "confidence": 77,
+          "stock": 16,
+          "uplink_margin": null,
+          "memory_id": 257,
+          "host_beacon_id": 1
+        },
+        {
+          "tick": 292,
+          "event": "FIRE",
+          "decision": "SKIP",
+          "reason": "redundant \u2014 same event type within 2 cells"
+        }
+      ],
+      "executor_events": {
+        "E01": [
+          {
+            "tick": 3612,
+            "kind": "mission_loaded",
+            "mission": "M001",
+            "attempt_id": 5,
+            "targets": 1,
+            "hazards": 0,
+            "waypoints": 2,
+            "why": "FIRE #0101 state=UNVERIFIED conf=39% age=345s"
+          },
+          {
+            "tick": 3628,
+            "kind": "replan",
+            "at": [
+              2,
+              1
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                3,
+                2
+              ]
+            ]
+          },
+          {
+            "tick": 3643,
+            "kind": "replan",
+            "at": [
+              3,
+              1
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                4,
+                2
+              ]
+            ]
+          },
+          {
+            "tick": 3718,
+            "kind": "discrepancy",
+            "cell": [
+              7,
+              4
+            ],
+            "expected": "passable (planned route / inherited map)",
+            "observed": "BLOCKED (debris)"
+          },
+          {
+            "tick": 3718,
+            "kind": "new_blockage",
+            "cell": [
+              7,
+              4
+            ],
+            "memory": "#1001"
+          },
+          {
+            "tick": 3718,
+            "kind": "memory_write",
+            "memory": "#1001",
+            "type": "BLOCKAGE",
+            "state": "VERIFIED",
+            "version": 1,
+            "beacon": 1,
+            "new_beacon": false,
+            "why": "blocked passage discovered"
+          },
+          {
+            "tick": 3823,
+            "kind": "replan",
+            "at": [
+              9,
+              3
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                8,
+                4
+              ]
+            ]
+          },
+          {
+            "tick": 3838,
+            "kind": "discrepancy",
+            "cell": [
+              8,
+              5
+            ],
+            "expected": "passable (planned route / inherited map)",
+            "observed": "BLOCKED (debris)"
+          },
+          {
+            "tick": 3838,
+            "kind": "new_blockage",
+            "cell": [
+              8,
+              5
+            ],
+            "memory": "#1002"
+          },
+          {
+            "tick": 3838,
+            "kind": "memory_write",
+            "memory": "#1002",
+            "type": "BLOCKAGE",
+            "state": "VERIFIED",
+            "version": 1,
+            "beacon": 1,
+            "new_beacon": false,
+            "why": "blocked passage discovered"
+          },
+          {
+            "tick": 3838,
+            "kind": "replan",
+            "at": [
+              9,
+              4
+            ],
+            "cause": "BLOCKAGE ahead",
+            "cells": [
+              [
+                8,
+                5
+              ]
+            ]
+          },
+          {
+            "tick": 3853,
+            "kind": "replan",
+            "at": [
+              9,
+              5
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                8,
+                6
+              ]
+            ]
+          },
+          {
+            "tick": 3868,
+            "kind": "replan",
+            "at": [
+              9,
+              6
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                8,
+                7
+              ]
+            ]
+          },
+          {
+            "tick": 3883,
+            "kind": "replan",
+            "at": [
+              9,
+              7
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                8,
+                8
+              ]
+            ]
+          },
+          {
+            "tick": 3958,
+            "kind": "replan",
+            "at": [
+              7,
+              8
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          {
+            "tick": 3973,
+            "kind": "replan",
+            "at": [
+              7,
+              7
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                6,
+                6
+              ]
+            ]
+          },
+          {
+            "tick": 4018,
+            "kind": "replan",
+            "at": [
+              5,
+              6
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                6,
+                5
+              ]
+            ]
+          },
+          {
+            "tick": 4019,
+            "kind": "target_unreachable",
+            "blockers": [
+              "#1002"
+            ],
+            "wait": 120,
+            "retries": 1
+          },
+          {
+            "tick": 4139,
+            "kind": "retry_after_wait",
+            "retries_left": 0
+          },
+          {
+            "tick": 4260,
+            "kind": "returning",
+            "why": "target unreachable"
+          },
+          {
+            "tick": 4666,
+            "kind": "home",
+            "state": "AVAILABLE",
+            "battery": 100
+          }
+        ],
+        "E02": [
+          {
+            "tick": 4580,
+            "kind": "mission_loaded",
+            "mission": "M001",
+            "attempt_id": 7,
+            "targets": 1,
+            "hazards": 1,
+            "waypoints": 2,
+            "why": "FIRE #0101 state=UNVERIFIED conf=32% age=442s"
+          },
+          {
+            "tick": 4596,
+            "kind": "replan",
+            "at": [
+              2,
+              1
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                3,
+                2
+              ]
+            ]
+          },
+          {
+            "tick": 4611,
+            "kind": "replan",
+            "at": [
+              3,
+              1
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                4,
+                2
+              ]
+            ]
+          },
+          {
+            "tick": 4686,
+            "kind": "memory_write",
+            "memory": "#1001",
+            "type": "BLOCKAGE",
+            "state": "VERIFIED",
+            "version": 3,
+            "beacon": 1,
+            "new_beacon": false,
+            "why": "re-observed blocked"
+          },
+          {
+            "tick": 4791,
+            "kind": "replan",
+            "at": [
+              9,
+              3
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                8,
+                4
+              ]
+            ]
+          },
+          {
+            "tick": 4852,
+            "kind": "on_site",
+            "cell": [
+              7,
+              5
+            ]
+          },
+          {
+            "tick": 4860,
+            "kind": "work_start",
+            "task": "suppress fire"
+          },
+          {
+            "tick": 4910,
+            "kind": "work_done",
+            "task": "suppress fire",
+            "effect": "FIRE_EXTINGUISHED"
+          },
+          {
+            "tick": 4916,
+            "kind": "verified",
+            "target": "FIRE",
+            "result": "CLEARED"
+          },
+          {
+            "tick": 4917,
+            "kind": "memory_write",
+            "memory": "#0101",
+            "type": "FIRE",
+            "state": "CLEARED",
+            "version": 2,
+            "beacon": 1,
+            "new_beacon": false,
+            "why": "FIRE cleared (executor observation)"
+          },
+          {
+            "tick": 4917,
+            "kind": "returning",
+            "why": "mission complete"
+          },
+          {
+            "tick": 5188,
+            "kind": "home",
+            "state": "AVAILABLE",
+            "battery": 100
+          }
+        ],
+        "E03": [
+          {
+            "tick": 4261,
+            "kind": "mission_loaded",
+            "mission": "M003",
+            "attempt_id": 6,
+            "targets": 1,
+            "hazards": 2,
+            "waypoints": 2,
+            "why": "BLOCKAGE #1002 state=VERIFIED conf=87% age=43s"
+          },
+          {
+            "tick": 4277,
+            "kind": "replan",
+            "at": [
+              2,
+              1
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                3,
+                2
+              ]
+            ]
+          },
+          {
+            "tick": 4292,
+            "kind": "replan",
+            "at": [
+              3,
+              1
+            ],
+            "cause": "unexplored cell turned out to be a wall",
+            "cells": [
+              [
+                4,
+                2
+              ]
+            ]
+          },
+          {
+            "tick": 4367,
+            "kind": "memory_write",
+            "memory": "#1001",
+            "type": "BLOCKAGE",
+            "state": "VERIFIED",
+            "version": 2,
+            "beacon": 1,
+            "new_beacon": false,
+            "why": "re-observed blocked"
+          },
+          {
+            "tick": 4487,
+            "kind": "memory_write",
+            "memory": "#1002",
+            "type": "BLOCKAGE",
+            "state": "VERIFIED",
+            "version": 2,
+            "beacon": 1,
+            "new_beacon": false,
+            "why": "re-observed blocked"
+          },
+          {
+            "tick": 4503,
+            "kind": "on_site",
+            "cell": [
+              9,
+              5
+            ]
+          },
+          {
+            "tick": 4511,
+            "kind": "work_start",
+            "task": "clear passage"
+          },
+          {
+            "tick": 4571,
+            "kind": "work_done",
+            "task": "clear passage",
+            "effect": "DEBRIS_CLEARED"
+          },
+          {
+            "tick": 4577,
+            "kind": "verified",
+            "target": "BLOCKAGE",
+            "result": "CLEARED"
+          },
+          {
+            "tick": 4578,
+            "kind": "memory_write",
+            "memory": "#1002",
+            "type": "BLOCKAGE",
+            "state": "CLEARED",
+            "version": 3,
+            "beacon": 1,
+            "new_beacon": false,
+            "why": "BLOCKAGE cleared (executor observation)"
+          },
+          {
+            "tick": 4578,
+            "kind": "returning",
+            "why": "mission complete"
+          },
+          {
+            "tick": 4819,
+            "kind": "home",
+            "state": "AVAILABLE",
+            "battery": 100
+          }
+        ]
+      },
+      "packets": [
+        {
+          "tick": 244,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 8,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 08 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 c5",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 402,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 19,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 13 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 47",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 802,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 29,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 1d 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 13",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 1202,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 37,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 25 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 72",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 1602,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 48,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 30 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 a4",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 2002,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 72,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 48 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 16",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 2402,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 86,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 56 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 a2",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 2802,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 93,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 5d 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 c0",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 3202,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 110,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 6e 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 c3",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 3602,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 118,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 76 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 53",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 3721,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 121,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 79 00 0b 01 02 00 01 1c 01 05 00 00 c0 3f 00 00 40 c0 f3 3c b1 6a 02 5f 64 c9 01 10 01 01 01 f3 3c b1 6a 80 4b",
+          "memory_id": 4097,
+          "version": 1,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 3841,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 125,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 7d 00 0b 01 02 00 01 1c 01 05 00 00 00 40 00 00 60 c0 ff 3c b1 6a 02 5f 64 84 02 10 01 01 01 ff 3c b1 6a 80 8c",
+          "memory_id": 4098,
+          "version": 1,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4002,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 129,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 81 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 2c",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4002,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 130,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 82 00 0b 01 02 00 01 1c 01 05 00 00 c0 3f 00 00 40 c0 f3 3c b1 6a 02 5f 64 c9 01 10 01 01 01 f3 3c b1 6a 80 7c",
+          "memory_id": 4097,
+          "version": 1,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4002,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 131,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 83 00 0b 01 02 00 01 1c 01 05 00 00 00 40 00 00 60 c0 ff 3c b1 6a 02 5f 64 84 02 10 01 01 01 ff 3c b1 6a 80 8d",
+          "memory_id": 4098,
+          "version": 1,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4370,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 138,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 8a 00 0b 01 02 00 01 1c 01 05 00 00 c0 3f 00 00 40 c0 34 3d b1 6a 02 5f 64 81 01 10 02 01 01 34 3d b1 6a 82 07",
+          "memory_id": 4097,
+          "version": 2,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4402,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 141,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 8d 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 64",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4402,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 142,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 8e 00 0b 01 02 00 01 1c 01 05 00 00 c0 3f 00 00 40 c0 34 3d b1 6a 02 5f 64 81 01 10 02 01 01 34 3d b1 6a 82 3f",
+          "memory_id": 4097,
+          "version": 2,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4402,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 143,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 8f 00 0b 01 02 00 01 1c 01 05 00 00 00 40 00 00 60 c0 ff 3c b1 6a 02 5f 64 84 02 10 01 01 01 ff 3c b1 6a 80 c5",
+          "memory_id": 4098,
+          "version": 1,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4490,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 145,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 91 00 0b 01 02 00 01 1c 01 05 00 00 00 40 00 00 60 c0 40 3d b1 6a 02 5f 64 ed 02 10 02 01 01 40 3d b1 6a 82 01",
+          "memory_id": 4098,
+          "version": 2,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4581,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 149,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 95 00 0b 01 02 00 01 1c 01 05 00 00 00 40 00 00 60 c0 49 3d b1 6a 02 5f 64 db 02 10 03 05 00 49 3d b1 6a 82 3d",
+          "memory_id": 4098,
+          "version": 3,
+          "state": "CLEARED",
+          "host": 1
+        },
+        {
+          "tick": 4689,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 153,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 99 00 0b 01 02 00 01 1c 01 05 00 00 c0 3f 00 00 40 c0 54 3d b1 6a 02 5f 64 f0 01 10 03 01 01 54 3d b1 6a 81 d6",
+          "memory_id": 4097,
+          "version": 3,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4802,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 157,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 9d 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 90 3b b1 6a 03 4d 60 3d 01 01 01 00 ff 90 3b b1 6a 41 84",
+          "memory_id": 257,
+          "version": 1,
+          "state": "UNVERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4802,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 158,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 9e 00 0b 01 02 00 01 1c 01 05 00 00 c0 3f 00 00 40 c0 54 3d b1 6a 02 5f 64 f0 01 10 03 01 01 54 3d b1 6a 81 fc",
+          "memory_id": 4097,
+          "version": 3,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 4802,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 159,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 9f 00 0b 01 02 00 01 1c 01 05 00 00 00 40 00 00 60 c0 49 3d b1 6a 02 5f 64 db 02 10 03 05 00 49 3d b1 6a 82 51",
+          "memory_id": 4098,
+          "version": 3,
+          "state": "CLEARED",
+          "host": 1
+        },
+        {
+          "tick": 4920,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 162,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 a2 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 6b 3d b1 6a 03 5f 64 1a 01 01 02 05 ff 6b 3d b1 6a 81 c8",
+          "memory_id": 257,
+          "version": 2,
+          "state": "CLEARED",
+          "host": 1
+        },
+        {
+          "tick": 5202,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 168,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 a8 00 0b 01 02 00 01 1c 01 02 00 00 00 40 00 00 40 c0 6b 3d b1 6a 03 5f 64 1a 01 01 02 05 ff 6b 3d b1 6a 81 a4",
+          "memory_id": 257,
+          "version": 2,
+          "state": "CLEARED",
+          "host": 1
+        },
+        {
+          "tick": 5202,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 169,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 a9 00 0b 01 02 00 01 1c 01 05 00 00 c0 3f 00 00 40 c0 54 3d b1 6a 02 5f 64 f0 01 10 03 01 01 54 3d b1 6a 81 c7",
+          "memory_id": 4097,
+          "version": 3,
+          "state": "VERIFIED",
+          "host": 1
+        },
+        {
+          "tick": 5202,
+          "src": 2,
+          "dst": 0,
+          "origin": 1,
+          "seq": 170,
+          "hops": 1,
+          "bytes": 39,
+          "hex": "01 01 aa 00 0b 01 02 00 01 1c 01 05 00 00 00 40 00 00 60 c0 49 3d b1 6a 02 5f 64 db 02 10 03 05 00 49 3d b1 6a 82 76",
+          "memory_id": 4098,
+          "version": 3,
+          "state": "CLEARED",
+          "host": 1
+        }
+      ],
+      "wall_seconds": 0.435
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "passed": false,
+  "results": [
+    {
+      "scenario": "normal",
+      "seed": 42,
+      "passed": false,
+      "error": "The time limit was reached while the explorer had not yet saved a finding.",
+      "explanation": {
+        "status": "stopped",
+        "title": "Demo stopped: a check failed",
+        "what": "The time limit was reached while the explorer had not yet saved a finding.",
+        "why": "Success requires every final check to pass.",
+        "next": "Press R to restart. Details shows the diagnostic evidence."
+      },
+      "error_detail": "timeout tick=3, stage=0",
+      "checks": {
+        "all_milestones": false,
+        "final_memory_states": false,
+        "missions_completed_and_home": false,
+        "writer_end": false,
+        "ona_path": false,
+        "queue_unique": true,
+        "beacon_updates_agree": true
+      },
+      "tick": 3,
+      "checkpoints": [
+        {
+          "tick": 0,
+          "name": "Ready: start Writer exploration"
+        },
+        {
+          "tick": 3,
+          "name": "Demo stopped: a check failed",
+          "error": "The time limit was reached while the explorer had not yet saved a finding."
+        }
+      ],
+      "records": [],
+      "decisions": [],
+      "network": {
+        "beacons": 0,
+        "beacons_connected_to_ona": 0,
+        "max_hops": 0,
+        "frames_transmitted": 0,
+        "frames_delivered": 0,
+        "frames_lost_random": 0,
+        "forwarded_by_beacons": 0,
+        "retries": 0,
+        "duplicates_suppressed": 0,
+        "ona_memory_frames": 0,
+        "ona_heartbeats": 0,
+        "ona_crc_rejected": 0
+      },
+      "writer_state": "EXPLORING",
+      "writer_decisions": [],
+      "executor_events": {
+        "E01": [],
+        "E02": []
+      },
+      "packets": [],
+      "wall_seconds": 0.315
+    }
+  ]
+}
