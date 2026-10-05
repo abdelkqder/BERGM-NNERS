@@ -48,32 +48,6 @@ stateDiagram-v2
 
 ## Mission and recovery sequence
 
-```mermaid
-sequenceDiagram
-    participant CP as Command Post
-    participant O as ONA
-    participant E as FIRE Executor
-    participant B as Beacon mesh
-    participant D as DEBRIS Executor
-    CP->>O: Brief: mission M, attempt A
-    E->>O: Poll at entry
-    O->>E: Inherited brief
-    E->>B: Write new BLOCKAGE observation
-    E->>O: BLOCKED, attempt A, blockage memory
-    O->>CP: Forward correlated result
-    CP->>O: Clearance brief, new attempt
-    D->>O: Poll at entry
-    D->>B: Clear debris; write CLEARED observation
-    B->>O: Updated memory via relays
-    O->>CP: Forward clearance
-    CP->>O: Retry M, new attempt B
-    E->>O: Poll after returning (or another available FIRE executor)
-    E->>B: Resolve FIRE; update memory
-    E->>O: Outcome tagged with attempt B
-    O->>CP: Close M once
-    E->>O: Return status: AVAILABLE
-```
-
 Each dispatch gets a positive process-unique 16-bit attempt ID, including retries and resets. Outcomes update their own assignment; state updates also require the latest assignment and a newer modular sequence number. A late valid result may close its old mission without releasing a newer executor reservation. Duplicate outcomes are ignored. Queue insertion keeps one entry per mission ID. A BLOCKED status may name a different memory (the blockage); its attempt identifies the affected target mission.
 
 Legacy zero-attempt briefs/statuses remain supported for legacy assignments. They cannot update modern assignments. IDs/versions must fit their wire ranges; exhaustion raises an explicit error rather than wrapping silently.
