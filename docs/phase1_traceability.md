@@ -62,26 +62,6 @@ Source: supplied challenge PDF, scoring on page 2. Its heading says **Initial Ph
 | Technical solution diagrams | 5 | [Architecture, lifecycle, recovery sequence](architecture/system-architecture.md) | Follow diagrams alongside guided checkpoints and protocol table | Physical wiring details remain in hardware plan |
 
 The general requirement for two physical robots remains part of the overall challenge. Simulated Writer/Executors satisfy the current simulation demonstration only; they are not proof of that physical requirement. Membership bonuses, registration and final-phase scoring are administrative/future items and are not claimed by code tests.
-
-## Compliance recheck: 5 October 2026
-
-**The scoped simulation implementation is complete; the whole Phase 1 submission is not yet complete.** The supplied three-page PDF was re-read, including the scoring table. The verified source manifest still matches the current implementation. Existing evidence records 399 passing tests, three passing mission demonstrations and eleven injected failures correctly stopping without success.
-
-All seven technical categories have implementation and simulation evidence: Writer autonomy; event detection and beacon deposition; beacon messages/signals and aging; frame translation; ONA; Executor; architecture/data-flow diagrams. That is coverage of the categories, not a promise of all available marks. Physical sensors, radio, drop mechanism, positioning accuracy and distant communication are not demonstrated in hardware.
-
-Submission gaps:
-
-1. **Short technical report (2 listed points): completed after this recheck.** The [six-page PDF](../output/pdf/phase1_technical_report.pdf) now exists, with diagrams, source-grounded results and proposed physical validation gates. See [report verification](../audit/phase1/report-verification.json). The understanding document, verification record and README remain supporting artifacts.
-2. **GitHub repository (4 listed points): present, final update pending.** An origin remote is configured, but this work's fixes, tests and evidence remain local. Publication and actual submission are not verified here.
-3. **Implementation plan (3 listed points): documented, needs cleanup.** The hardware plan provides a stack, pin map, BOM and validation order. Reconcile its five ESP32 units with the stated two robot controllers plus one ONA, and the planned SX1278 choice with the transport stub's statement that no hardware has been selected. Package the next steps and milestones clearly. These are planning/documentation gaps, not failures of the simulation.
-4. **Innovation (5 listed points): evidence present; jury judgment remains.** Inherited memory, selective placement, aging, feedback and the measured-in-simulation comparison support the explanation. Tests cannot award originality marks.
-
-The remaining general conditions are also separate: two physical robots and a physical ONA are unbuilt/unverified; registration and society membership eligibility are unknown. The PDF lists the Phase 1 deadline as 5 October 2026, but no cutoff time; this is the supplied document's date, not an independently checked organizer update.
-
-The attached AI brief is a suggestion document, not a replacement rubric. Its literal checklist is not entirely completed: named FRESH/AGING/STALE display stages and a separate Executor behavior driven specifically by beacon age are not supplied. Current aging affects confidence and Command Post priority, and local Executor verification refreshes records. That meets the implemented aging mechanism without claiming the brief's extra age-dependent navigation behavior. The updated report now supplies a proposed SLAM integration roadmap: evaluate sensors and computing requirements, prototype localization/mapping, measure drift, and connect position/map outputs to existing navigation. **SLAM itself remains unimplemented.** The Command Post continues planning briefs and the ONA carrying them, as agreed.
-
-Do not report a predicted total: the PDF says Initial Phase 45 points but enumerates 60. Resolve the rubric subtotal with the organizers before using it for score arithmetic.
-
 ## What the tests do and do not prove
 
 * A coordinate-transform test proves the mathematics (and the 7-decimal rounding of the output), **not** how well a real robot localises.
